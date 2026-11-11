@@ -1,0 +1,1274 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>汐梦瑶推特每日 - 内容聚合与动态追踪</title>
+  <meta name="description" content="汐梦瑶推特每日聚焦汐梦瑶在推特上的最新动态、图文合辑与话题反应，收录11月8日前后更新条目、精选图集、粉丝讨论与深度解析，适合关注创作者日常的读者浏览。">
+  <meta name="keywords" content="汐梦瑶推特每日">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%231a1e3a'/%3E%3Cpath d='M9 18c2-6 8-10 15-8-1 6-5 11-11 12' fill='none' stroke='%23c9a8ff' stroke-width='2'/%3E%3Ccircle cx='12' cy='13' r='1.6' fill='%23c9a8ff'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      --bg: #f6f4fb;
+      --surface: #ffffff;
+      --surface-soft: #f0ecfa;
+      --ink: #1b1a2e;
+      --ink-2: #4b4766;
+      --ink-3: #7b7592;
+      --line: #e4dff0;
+      --primary: #5c3b9e;
+      --primary-light: #7d5fc0;
+      --primary-deep: #3e246f;
+      --accent: #d96b8a;
+      --accent-soft: #f7e3e9;
+      --radius-card: 16px;
+      --radius-btn: 999px;
+      --radius-tag: 6px;
+      --radius-banner: 20px;
+      --shadow-sm: 0 2px 10px rgba(60, 40, 100, 0.06);
+      --shadow-md: 0 10px 30px rgba(60, 40, 100, 0.12);
+      --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+      --maxw: 1380px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; scroll-padding-top: 108px; }
+    body {
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    button { font-family: inherit; cursor: pointer; border: none; background: none; }
+    .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
+
+    /* ---------- 吸顶公告条 ---------- */
+    .announce-bar {
+      background: var(--primary-deep);
+      color: #dcd1f5;
+      font-size: 13px;
+      padding: 6px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .announce-inner {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+      white-space: nowrap;
+      overflow-x: auto;
+    }
+    .announce-brand {
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: 0.3px;
+    }
+    .announce-item { display: inline-flex; align-items: center; gap: 6px; }
+    .announce-dot { width: 4px; height: 4px; border-radius: 50%; background: var(--accent); }
+    .announce-tag { background: rgba(255,255,255,0.12); padding: 1px 8px; border-radius: 20px; font-size: 11px; }
+
+    /* ---------- 页头 ---------- */
+    .site-header {
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line);
+      position: sticky;
+      top: 32px;
+      z-index: 90;
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      height: 68px;
+    }
+    .brand { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+    .brand svg { width: 32px; height: 32px; }
+    .brand-text { font-weight: 700; font-size: 18px; letter-spacing: 0.5px; color: var(--primary-deep); }
+    .nav-main { display: flex; gap: 22px; font-size: 14px; font-weight: 500; color: var(--ink-2); }
+    .nav-main a:hover { color: var(--primary); }
+    .header-actions { display: flex; gap: 10px; align-items: center; }
+    .search-box {
+      display: flex; align-items: center; gap: 6px;
+      background: var(--surface-soft); border-radius: var(--radius-btn);
+      padding: 4px 12px 4px 16px; border: 1px solid transparent;
+      transition: border 0.2s;
+    }
+    .search-box:focus-within { border-color: var(--primary-light); }
+    .search-box input {
+      border: none; background: transparent; outline: none;
+      font-size: 13px; width: 130px; color: var(--ink);
+    }
+    .search-box button { font-size: 13px; color: var(--primary); font-weight: 600; }
+    .btn-contribute {
+      background: var(--primary); color: #fff; font-size: 13px; font-weight: 600;
+      padding: 8px 16px; border-radius: var(--radius-btn);
+      transition: background 0.2s, transform 0.15s;
+    }
+    .btn-contribute:hover { background: var(--primary-deep); transform: translateY(-1px); }
+    .hamburger { display: none; font-size: 24px; color: var(--primary-deep); background: none; }
+
+    /* ---------- 首屏 ---------- */
+    .hero {
+      background: linear-gradient(135deg, #f3eefc 0%, #e9e2f7 50%, #f7eef2 100%);
+      border-radius: 0 0 var(--radius-banner) var(--radius-banner);
+      padding: 48px 0 52px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::after {
+      content: '';
+      position: absolute; right: -80px; top: -60px;
+      width: 340px; height: 340px;
+      background: radial-gradient(circle, rgba(157,120,220,0.18) 0%, transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 40px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+    .hero h1 {
+      font-size: clamp(28px, 4vw, 44px);
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      line-height: 1.2;
+      color: var(--primary-deep);
+      margin-bottom: 16px;
+    }
+    .hero-desc {
+      font-size: 16px;
+      color: var(--ink-2);
+      max-width: 560px;
+      margin-bottom: 24px;
+    }
+    .hero-meta {
+      display: flex; gap: 20px; flex-wrap: wrap; font-size: 13px; color: var(--ink-3);
+      margin-bottom: 28px;
+    }
+    .hero-meta span { display: flex; align-items: center; gap: 6px; }
+    .hero-cta { display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn-primary {
+      background: var(--primary); color: #fff; padding: 12px 28px;
+      border-radius: var(--radius-btn); font-weight: 600; font-size: 15px;
+      transition: background 0.2s, transform 0.15s;
+      display: inline-block;
+    }
+    .btn-primary:hover { background: var(--primary-deep); transform: translateY(-2px); }
+    .btn-ghost {
+      border: 1.5px solid var(--primary); color: var(--primary);
+      padding: 11px 26px; border-radius: var(--radius-btn); font-weight: 600; font-size: 15px;
+      transition: background 0.2s, color 0.2s;
+      display: inline-block;
+    }
+    .btn-ghost:hover { background: var(--primary); color: #fff; }
+    .hero-visual {
+      display: flex; justify-content: center; align-items: center;
+    }
+    .hero-visual svg { width: 100%; max-width: 320px; height: auto; }
+
+    /* ---------- 三栏布局 ---------- */
+    .portal-grid {
+      display: grid;
+      grid-template-columns: 175px minmax(0, 1fr) 250px;
+      gap: 28px;
+      margin: 36px 0 60px;
+    }
+    .channel-index {
+      position: sticky;
+      top: 112px;
+      align-self: start;
+      background: var(--surface);
+      border-radius: var(--radius-card);
+      padding: 16px 12px;
+      box-shadow: var(--shadow-sm);
+    }
+    .channel-index h3 {
+      font-size: 12px; text-transform: uppercase; letter-spacing: 1px;
+      color: var(--ink-3); margin-bottom: 12px; padding-left: 8px;
+    }
+    .channel-list { list-style: none; display: flex; flex-direction: column; gap: 2px; }
+    .channel-list a {
+      display: block; padding: 7px 10px; border-radius: 8px;
+      font-size: 13.5px; color: var(--ink-2); font-weight: 500;
+      transition: background 0.15s, color 0.15s;
+    }
+    .channel-list a:hover, .channel-list a.active { background: var(--surface-soft); color: var(--primary-deep); font-weight: 600; }
+
+    .main-content { min-width: 0; }
+    .sidebar-right { display: flex; flex-direction: column; gap: 24px; }
+
+    /* ---------- 板块通用 ---------- */
+    .section { margin-bottom: 48px; }
+    .section-head { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 20px; flex-wrap: wrap; gap: 8px; }
+    .section-title { font-size: 22px; font-weight: 700; letter-spacing: -0.3px; color: var(--primary-deep); }
+    .section-sub { font-size: 13px; color: var(--ink-3); }
+
+    /* ---------- 卡片网格 ---------- */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+      gap: 16px;
+    }
+    .card {
+      background: var(--surface);
+      border-radius: var(--radius-card);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.2s, box-shadow 0.2s;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+    .card-img { width: 100%; aspect-ratio: 4/3; object-fit: cover; }
+    .card-body { padding: 14px 16px 16px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+    .card-title { font-size: 15px; font-weight: 700; line-height: 1.35; color: var(--ink); }
+    .card-tags { display: flex; flex-wrap: wrap; gap: 5px; }
+    .tag {
+      font-size: 11px; padding: 2px 8px; border-radius: var(--radius-tag);
+      background: var(--surface-soft); color: var(--primary);
+      font-weight: 500; white-space: nowrap;
+    }
+    .tag.accent { background: var(--accent-soft); color: #a8435e; }
+    .card-desc { font-size: 13px; color: var(--ink-2); line-height: 1.55; flex: 1; }
+    .card-foot { display: flex; justify-content: space-between; font-size: 12px; color: var(--ink-3); margin-top: 4px; }
+    .card-foot .hot { color: var(--accent); font-weight: 600; }
+
+    /* ---------- 紧凑列表 ---------- */
+    .compact-list { list-style: none; display: flex; flex-direction: column; gap: 0; }
+    .compact-list li {
+      display: flex; gap: 12px; padding: 12px 0;
+      border-bottom: 1px solid var(--line);
+      font-size: 14px;
+      align-items: flex-start;
+    }
+    .compact-list li:last-child { border-bottom: none; }
+    .list-num {
+      flex-shrink: 0; width: 22px; height: 22px; border-radius: 6px;
+      background: var(--surface-soft); color: var(--primary);
+      font-size: 12px; font-weight: 700; display: flex; align-items: center; justify-content: center;
+      margin-top: 2px;
+    }
+    .list-num.top { background: var(--primary); color: #fff; }
+    .list-body { flex: 1; }
+    .list-title { font-weight: 600; color: var(--ink); }
+    .list-desc { font-size: 12.5px; color: var(--ink-3); margin-top: 2px; }
+
+    /* ---------- 分类入口 ---------- */
+    .cat-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+    .cat-btn {
+      background: var(--surface);
+      border-radius: 12px;
+      padding: 14px 10px;
+      text-align: center;
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--ink-2);
+      box-shadow: var(--shadow-sm);
+      transition: background 0.2s, color 0.2s, transform 0.15s;
+      border: 1.5px solid transparent;
+    }
+    .cat-btn:hover, .cat-btn.active { background: var(--surface-soft); color: var(--primary-deep); border-color: var(--primary-light); transform: translateY(-1px); }
+
+    /* ---------- 深度解析 ---------- */
+    .deep-read {
+      background: var(--surface);
+      border-radius: var(--radius-card);
+      padding: 28px 30px;
+      box-shadow: var(--shadow-sm);
+    }
+    .deep-read h2 { font-size: 22px; font-weight: 700; color: var(--primary-deep); margin-bottom: 20px; }
+    .deep-read h3 { font-size: 17px; font-weight: 700; margin: 22px 0 10px; color: var(--ink); }
+    .deep-read p { font-size: 15px; color: var(--ink-2); margin-bottom: 12px; line-height: 1.75; }
+    .deep-read ul { margin: 8px 0 16px 20px; font-size: 14.5px; color: var(--ink-2); }
+    .deep-read li { margin-bottom: 6px; }
+    .deep-read blockquote {
+      border-left: 3px solid var(--primary-light);
+      padding: 8px 16px; margin: 16px 0;
+      background: var(--surface-soft);
+      border-radius: 0 8px 8px 0;
+      font-size: 14px; color: var(--ink-2);
+    }
+
+    /* ---------- FAQ ---------- */
+    .faq-list { display: flex; flex-direction: column; gap: 10px; }
+    details {
+      background: var(--surface);
+      border-radius: 12px;
+      box-shadow: var(--shadow-sm);
+      padding: 0 18px;
+      transition: box-shadow 0.2s;
+    }
+    details[open] { box-shadow: var(--shadow-md); }
+    summary {
+      padding: 14px 0;
+      font-weight: 600; font-size: 15px; color: var(--ink);
+      cursor: pointer; list-style: none;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: '+'; font-size: 20px; color: var(--primary); transition: transform 0.2s; }
+    details[open] summary::after { content: '−'; }
+    .faq-answer { padding: 0 0 16px; font-size: 14px; color: var(--ink-2); line-height: 1.7; }
+
+    /* ---------- 评论 ---------- */
+    .comment-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 12px;
+    }
+    .comment-card {
+      background: var(--surface);
+      border-radius: 12px;
+      padding: 14px 16px;
+      box-shadow: var(--shadow-sm);
+      font-size: 13.5px;
+      display: flex; flex-direction: column; gap: 6px;
+    }
+    .comment-user { display: flex; align-items: center; gap: 8px; font-weight: 600; font-size: 13px; color: var(--primary-deep); }
+    .avatar {
+      width: 26px; height: 26px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary-light), var(--accent));
+      display: flex; align-items: center; justify-content: center;
+      color: #fff; font-size: 11px; font-weight: 700;
+    }
+    .comment-text { color: var(--ink-2); line-height: 1.6; }
+    .comment-meta { font-size: 11px; color: var(--ink-3); }
+
+    /* ---------- 资讯 ---------- */
+    .news-list { display: flex; flex-direction: column; gap: 0; }
+    .news-item { display: flex; gap: 16px; padding: 16px 0; border-bottom: 1px solid var(--line); }
+    .news-item:last-child { border-bottom: none; }
+    .news-date { flex-shrink: 0; font-size: 12px; color: var(--ink-3); width: 76px; padding-top: 2px; }
+    .news-title { font-weight: 600; font-size: 15px; margin-bottom: 4px; }
+    .news-desc { font-size: 13px; color: var(--ink-3); line-height: 1.55; }
+
+    /* ---------- 侧栏模块 ---------- */
+    .side-module {
+      background: var(--surface);
+      border-radius: var(--radius-card);
+      padding: 18px 16px;
+      box-shadow: var(--shadow-sm);
+    }
+    .side-module h4 { font-size: 14px; font-weight: 700; margin-bottom: 14px; color: var(--primary-deep); letter-spacing: 0.2px; }
+    .side-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .side-list li { font-size: 13px; color: var(--ink-2); display: flex; gap: 8px; align-items: flex-start; }
+    .side-list .idx { color: var(--primary-light); font-weight: 700; font-size: 12px; min-width: 16px; }
+    .side-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+    .side-tag {
+      font-size: 12px; padding: 4px 10px; border-radius: var(--radius-tag);
+      background: var(--surface-soft); color: var(--ink-2);
+      transition: background 0.15s, color 0.15s;
+    }
+    .side-tag:hover { background: var(--primary); color: #fff; }
+
+    /* ---------- 补充板块：时间线 ---------- */
+    .timeline { list-style: none; position: relative; padding-left: 20px; }
+    .timeline::before {
+      content: ''; position: absolute; left: 5px; top: 6px; bottom: 6px;
+      width: 2px; background: var(--line); border-radius: 2px;
+    }
+    .timeline li { position: relative; padding-bottom: 16px; font-size: 13.5px; }
+    .timeline li:last-child { padding-bottom: 0; }
+    .timeline li::before {
+      content: ''; position: absolute; left: -19px; top: 6px;
+      width: 8px; height: 8px; border-radius: 50%;
+      background: var(--primary-light); border: 2px solid var(--surface);
+    }
+    .timeline .time { font-size: 11px; color: var(--ink-3); display: block; }
+
+    /* ---------- 相关推荐标签索引 ---------- */
+    .rec-index { display: flex; flex-wrap: wrap; gap: 8px; }
+    .rec-tag {
+      font-size: 13px; padding: 6px 14px; border-radius: var(--radius-btn);
+      background: var(--surface); box-shadow: var(--shadow-sm);
+      color: var(--ink-2); font-weight: 500;
+      transition: background 0.15s, color 0.15s, transform 0.15s;
+    }
+    .rec-tag:hover { background: var(--primary); color: #fff; transform: translateY(-1px); }
+
+    /* ---------- 页尾 ---------- */
+    .site-footer {
+      background: var(--primary-deep);
+      color: #c7bce0;
+      padding: 48px 0 28px;
+      margin-top: 40px;
+      font-size: 13px;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr 1fr;
+      gap: 32px;
+      margin-bottom: 32px;
+    }
+    .footer-brand { font-size: 18px; font-weight: 700; color: #fff; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+    .footer-desc { font-size: 13px; line-height: 1.7; color: #b3a8ce; max-width: 300px; }
+    .footer-col h5 { color: #fff; font-size: 13px; font-weight: 700; margin-bottom: 12px; letter-spacing: 0.5px; }
+    .footer-col a { display: block; margin-bottom: 8px; color: #b3a8ce; font-size: 13px; transition: color 0.15s; }
+    .footer-col a:hover { color: #fff; }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.12);
+      padding-top: 20px;
+      display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px;
+      font-size: 12px; color: #9a8cb8;
+    }
+
+    /* ---------- 回到顶部 ---------- */
+    .to-top {
+      position: fixed; right: 24px; bottom: 24px;
+      width: 44px; height: 44px; border-radius: 50%;
+      background: var(--primary); color: #fff;
+      font-size: 20px;
+      display: none; align-items: center; justify-content: center;
+      box-shadow: var(--shadow-md);
+      z-index: 80;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .to-top.show { display: flex; }
+    .to-top:hover { background: var(--primary-deep); transform: translateY(-2px); }
+
+    /* ---------- 搜索反馈 ---------- */
+    .search-feedback { font-size: 13px; color: var(--accent); padding: 8px 0; display: none; }
+    .search-feedback.show { display: block; }
+
+    /* ---------- 响应式 ---------- */
+    @media (max-width: 1024px) {
+      .portal-grid { grid-template-columns: 1fr 260px; gap: 24px; }
+      .channel-index { display: none; }
+      .nav-main { display: none; }
+      .hamburger { display: block; }
+      .hero-grid { grid-template-columns: 1fr; }
+      .hero-visual { display: none; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .cat-grid { grid-template-columns: repeat(4, 1fr); }
+      .site-header { top: 30px; }
+    }
+    @media (max-width: 740px) {
+      .portal-grid { grid-template-columns: 1fr; }
+      .sidebar-right { order: 2; }
+      .cat-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-grid { grid-template-columns: 1fr; }
+      .header-inner { height: 58px; }
+      .search-box input { width: 80px; }
+      .btn-contribute { padding: 6px 12px; font-size: 12px; }
+      .announce-inner { font-size: 12px; gap: 12px; }
+      .site-header { top: 28px; }
+      .comment-grid { grid-template-columns: 1fr; }
+      .card-grid { grid-template-columns: 1fr 1fr; }
+      .deep-read { padding: 20px 18px; }
+      .hero { padding: 32px 0 36px; }
+      .hero h1 { font-size: 26px; }
+    }
+    @media (max-width: 420px) {
+      .card-grid { grid-template-columns: 1fr; }
+    }
+
+    /* 移动端菜单（简单抽屉） */
+    .mobile-menu {
+      display: none;
+      position: fixed; inset: 0; z-index: 200;
+    }
+    .mobile-menu.open { display: block; }
+    .mobile-menu-overlay {
+      position: absolute; inset: 0; background: rgba(0,0,0,0.4);
+      backdrop-filter: blur(2px);
+    }
+    .mobile-menu-panel {
+      position: absolute; top: 0; left: 0; width: 260px; height: 100%;
+      background: var(--surface); padding: 24px 16px;
+      box-shadow: var(--shadow-md);
+      display: flex; flex-direction: column; gap: 8px;
+      overflow-y: auto;
+    }
+    .mobile-menu-panel a {
+      display: block; padding: 10px 12px; border-radius: 8px;
+      font-size: 15px; font-weight: 500; color: var(--ink-2);
+    }
+    .mobile-menu-panel a:hover { background: var(--surface-soft); color: var(--primary-deep); }
+    .mobile-close {
+      align-self: flex-end; font-size: 26px; color: var(--ink-3);
+      margin-bottom: 12px; line-height: 1;
+    }
+    .menu-label { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: var(--ink-3); margin: 12px 0 4px; padding-left: 12px; }
+
+    /* 减少动效 */
+    @media (prefers-reduced-motion: reduce) {
+      * { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+      html { scroll-behavior: auto; }
+    }
+  </style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- ========== 吸顶公告条 ========== -->
+<div class="announce-bar" id="announceBar">
+  <div class="wrap announce-inner">
+    <span class="announce-brand">汐梦瑶推特每日</span>
+    <span class="announce-item"><span class="announce-dot"></span>11月8日 · 新增「秋日私服九宫格」图文合辑</span>
+    <span class="announce-item"><span class="announce-dot"></span>11月7日 · 推特空间更新「深夜语音房」节选</span>
+    <span class="announce-item"><span class="announce-tag">今日更新</span> 11月8日 · 话题 #汐梦瑶秋季穿搭 进入趋势榜第9位</span>
+  </div>
+</div>
+
+<!-- ========== 页头 ========== -->
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="/#hero" class="brand" aria-label="汐梦瑶推特每日首页">
+      <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="16" cy="16" r="15" fill="#3e246f"/>
+        <path d="M8 19c2.5-7 9-11 17-9-1.2 7-6 12-13 13" stroke="#c9a8ff" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="12" cy="13" r="1.8" fill="#d96b8a"/>
+        <path d="M18 22c1.5 0 3-.4 4.5-1.2" stroke="#c9a8ff" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+      <span class="brand-text">汐梦瑶推特每日</span>
+    </a>
+    <nav class="nav-main" aria-label="主导航">
+      <a href="/#latest">最新动态</a>
+      <a href="/#featured">精选图文</a>
+      <a href="/#categories">内容分类</a>
+      <a href="/#deepread">深度解析</a>
+      <a href="/#comments">读者讨论</a>
+    </nav>
+    <div class="header-actions">
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="搜索条目、标签…" aria-label="站内搜索">
+        <button id="searchBtn" aria-label="搜索">搜索</button>
+      </div>
+      <a href="/#contribute" class="btn-contribute">投稿</a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="打开菜单" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>
+
+<!-- 移动端菜单 -->
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <div class="mobile-menu-overlay" id="menuOverlay"></div>
+  <div class="mobile-menu-panel">
+    <button class="mobile-close" id="menuClose" aria-label="关闭菜单">×</button>
+    <span class="menu-label">频道</span>
+    <a href="/#latest">最新动态</a>
+    <a href="/#featured">精选图文</a>
+    <a href="/#categories">内容分类</a>
+    <a href="/#deepread">深度解析</a>
+    <a href="/#guide">体验指南</a>
+    <a href="/#faq">常见问答</a>
+    <a href="/#comments">读者讨论</a>
+    <a href="/#news">相关资讯</a>
+    <a href="/#recommend">相关推荐</a>
+    <a href="/#contribute">投稿入口</a>
+  </div>
+</div>
+
+<!-- ========== 首屏 ========== -->
+<section class="hero" id="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <h1>汐梦瑶推特每日</h1>
+      <p class="hero-desc">
+        汇总创作者汐梦瑶在推特发布的图文、短视频与语音片段，按发布时间归档整理。覆盖穿搭、日常随拍、粉丝问答与话题互动，每日更新当天的核心条目。
+      </p>
+      <div class="hero-meta">
+        <span>📅 11月8日已更新 6 条</span>
+        <span>🖼️ 图文合辑 23 组</span>
+        <span>💬 本周讨论 147 条</span>
+      </div>
+      <div class="hero-cta">
+        <a href="/#latest" class="btn-primary">查看今日更新</a>
+        <a href="/#featured" class="btn-ghost">浏览精选图文</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <svg viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <linearGradient id="hg1" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#c9a8ff" stop-opacity="0.6"/>
+            <stop offset="100%" stop-color="#d96b8a" stop-opacity="0.25"/>
+          </linearGradient>
+        </defs>
+        <circle cx="150" cy="140" r="110" fill="url(#hg1)"/>
+        <path d="M70 180 Q100 120 160 110 Q220 100 250 160" stroke="#5c3b9e" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+        <circle cx="110" cy="130" r="10" fill="#3e246f" opacity="0.8"/>
+        <circle cx="190" cy="150" r="7" fill="#d96b8a" opacity="0.8"/>
+        <rect x="120" y="190" width="60" height="4" rx="2" fill="#5c3b9e" opacity="0.3"/>
+        <rect x="100" y="200" width="100" height="4" rx="2" fill="#5c3b9e" opacity="0.2"/>
+        <rect x="130" y="210" width="40" height="4" rx="2" fill="#5c3b9e" opacity="0.2"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 主体三栏 ========== -->
+<div class="wrap portal-grid">
+
+  <!-- 左频道索引 -->
+  <aside class="channel-index" aria-label="频道索引">
+    <h3>频道</h3>
+    <ul class="channel-list">
+      <li><a href="/#latest" class="active">最新动态</a></li>
+      <li><a href="/#featured">精选图文</a></li>
+      <li><a href="/#categories">内容分类</a></li>
+      <li><a href="/#deepread">深度解析</a></li>
+      <li><a href="/#guide">体验指南</a></li>
+      <li><a href="/#faq">常见问答</a></li>
+      <li><a href="/#comments">读者讨论</a></li>
+      <li><a href="/#news">相关资讯</a></li>
+      <li><a href="/#recommend">相关推荐</a></li>
+      <li><a href="/#contribute">投稿入口</a></li>
+    </ul>
+  </aside>
+
+  <!-- 中主内容 -->
+  <main class="main-content">
+
+    <!-- 板块1：主题领域概览 -->
+    <section class="section" id="overview">
+      <div class="section-head">
+        <h2 class="section-title">领域概览｜推特图文与日常记录的内容切面</h2>
+        <span class="section-sub">2026年11月8日整理</span>
+      </div>
+      <div class="deep-read" style="padding:22px 26px;">
+        <p>汐梦瑶在推特上的内容大致分四条线：一是穿搭与日常随拍，多为手机直出、带时间水印的九宫格；二是短视频片段，集中在15秒到45秒之间，内容以化妆过程、开箱和场景切换为主；三是语音房节选，通常由粉丝录屏后二次上传；四是文字推文，数量不多但互动率高，常带投票或提问。这四类内容更新节奏不同——图文几乎日更，短视频隔天一条，语音房则集中在周末晚间。</p>
+        <p>11月以来的内容重心明显偏向秋季穿搭。11月3日发布的「针织开衫三色对比」单条获赞1.2万，转发里出现不少穿搭博主拆解版型；11月6日的「夜间便利店随拍」则走了相反路线，低饱和滤镜和随手构图，评论区分歧较大，有人觉得松弛，有人觉得敷衍。两类内容同时存在，恰好说明账号在“精致感”和“日常感”之间没有固定配方。</p>
+        <p>另一个值得留意的方向是粉丝问答。10月28日的「提问箱回复」长图里，汐梦瑶用文字回复了17个问题，涉及拍摄设备、修图习惯和更新计划，其中“用iPhone 13 mini拍，Lightroom调色”被多个搬运账号单独截出传播。这类内容信息密度高，但传播时容易被拆碎，原图反而少有人看完。</p>
+      </div>
+    </section>
+
+    <!-- 板块2：精选内容推荐 -->
+    <section class="section" id="featured">
+      <div class="section-head">
+        <h2 class="section-title">精选图文合辑</h2>
+        <span class="section-sub">近7日高互动条目</span>
+      </div>
+      <div class="card-grid">
+        <article class="card">
+          <img class="card-img" src="https://picsum.photos/seed/ximengyao1/400/300" alt="秋日针织开衫三色对比图，米白、燕麦与灰紫" width="400" height="300" loading="lazy">
+          <div class="card-body">
+            <h3 class="card-title">秋日针织开衫三色对比</h3>
+            <div class="card-tags"><span class="tag">穿搭</span><span class="tag">九宫格</span><span class="tag accent">11月3日</span></div>
+            <p class="card-desc">同一版型三件不同色开衫，分别在自然光与室内暖光下拍摄，对比袖口垂坠和肩线差异。评论区集中讨论灰紫色是否显旧。</p>
+            <div class="card-foot"><span>❤ 1.2万</span><span class="hot">转发 843</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card-img" src="https://picsum.photos/seed/ximengyao2/400/300" alt="夜间便利店门口随拍，冷色调街景与玻璃反光" width="400" height="300" loading="lazy">
+          <div class="card-body">
+            <h3 class="card-title">夜间便利店随拍</h3>
+            <div class="card-tags"><span class="tag">日常</span><span class="tag">低饱和</span><span class="tag accent">11月6日</span></div>
+            <p class="card-desc">六张手机直出图，未加滤镜。拍摄时间标注为22:47，玻璃反光里能看见拍摄者轮廓。转发中有人指出第三张构图偏斜。</p>
+            <div class="card-foot"><span>❤ 6,209</span><span class="hot">转发 312</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card-img" src="https://picsum.photos/seed/ximengyao3/400/300" alt="化妆台桌面俯拍，刷具与粉底液排列" width="400" height="300" loading="lazy">
+          <div class="card-body">
+            <h3 class="card-title">化妆台桌面收纳版本更新</h3>
+            <div class="card-tags"><span class="tag">开箱</span><span class="tag">桌面</span><span class="tag accent">11月1日</span></div>
+            <p class="card-desc">从亚克力收纳换成木质托盘，附带刷具清洗频率说明。评论区追问托盘尺寸，原推未回复，后由粉丝在转发中补充为30×20cm。</p>
+            <div class="card-foot"><span>❤ 4,811</span><span class="hot">转发 267</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card-img" src="https://picsum.photos/seed/ximengyao4/400/300" alt="语音房界面截图，显示在线人数与话题标签" width="400" height="300" loading="lazy">
+          <div class="card-body">
+            <h3 class="card-title">周末语音房「秋夜闲聊」节选</h3>
+            <div class="card-tags"><span class="tag">语音</span><span class="tag">录屏</span><span class="tag accent">11月2日</span></div>
+            <p class="card-desc">时长42分钟，粉丝整理出文字版时间轴。其中关于“更新频率为什么降低”的回应被单独剪辑，播放量是原录屏的3倍。</p>
+            <div class="card-foot"><span>❤ 3,502</span><span class="hot">转发 491</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card-img" src="https://picsum.photos/seed/ximengyao5/400/300" alt="提问箱回复长图截取，文字为主" width="400" height="300" loading="lazy">
+          <div class="card-body">
+            <h3 class="card-title">提问箱回复长图（17问）</h3>
+            <div class="card-tags"><span class="tag">问答</span><span class="tag">长图</span><span class="tag accent">10月28日</span></div>
+            <p class="card-desc">覆盖设备、修图、更新计划与内容取舍。第12问“会不会考虑出视频教程”的回答是“在学剪辑，没定时间”，被多个搬运号改写为“即将出教程”。</p>
+            <div class="card-foot"><span>❤ 8,734</span><span class="hot">转发 1,102</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card-img" src="https://picsum.photos/seed/ximengyao6/400/300" alt="秋季外套叠穿示意，三套搭配并列" width="400" height="300" loading="lazy">
+          <div class="card-body">
+            <h3 class="card-title">外套叠穿三套方案</h3>
+            <div class="card-tags"><span class="tag">穿搭</span><span class="tag">叠穿</span><span class="tag accent">11月5日</span></div>
+            <p class="card-desc">西装外套加连帽衫、风衣加针织马甲、短夹克加衬衫。每套标注了温度区间，但评论区指出“15℃以下穿连帽衫加西装不现实”。</p>
+            <div class="card-foot"><span>❤ 5,446</span><span class="hot">转发 389</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 板块3：最新更新 / 动态 -->
+    <section class="section" id="latest">
+      <div class="section-head">
+        <h2 class="section-title">最新更新与动态</h2>
+        <span class="section-sub">11月7日—11月8日</span>
+      </div>
+      <ul class="compact-list">
+        <li>
+          <span class="list-num top">1</span>
+          <div class="list-body">
+            <div class="list-title">「秋日私服九宫格」图文合辑</div>
+            <div class="list-desc">11月8日 09:12 发布，9张手机直出，标注拍摄于11月7日下午。首图外套来自某快时尚品牌，评论区已有人贴出相似款链接。</div>
+          </div>
+        </li>
+        <li>
+          <span class="list-num top">2</span>
+          <div class="list-body">
+            <div class="list-title">深夜语音房节选（11月7日场）</div>
+            <div class="list-desc">粉丝录屏上传，时长28分钟。涉及“11月更新计划”的部分被标注时间戳 14:22—16:05，文字版正在整理中。</div>
+          </div>
+        </li>
+        <li>
+          <span class="list-num">3</span>
+          <div class="list-body">
+            <div class="list-title">投票：下一期图文想看什么</div>
+            <div class="list-desc">11月7日 21:30 发起，选项为“通勤穿搭”“周末随拍”“开箱”三项。截至8日上午，通勤穿搭以47%领先。</div>
+          </div>
+        </li>
+        <li>
+          <span class="list-num">4</span>
+          <div class="list-body">
+            <div class="list-title">「夜间便利店随拍」转发破300</div>
+            <div class="list-desc">11月6日发布，11月7日晚转发数达到312。转发中热度最高的一条来自穿搭博主，指出“第三张的构图可以裁掉左边三分之一”。</div>
+          </div>
+        </li>
+        <li>
+          <span class="list-num">5</span>
+          <div class="list-body">
+            <div class="list-title">粉丝二创：开衫穿搭手绘图</div>
+            <div class="list-desc">11月7日，账号 @lin_sketch 发布三张手绘，还原11月3日开衫合辑中的配色。汐梦瑶本人转发并评论“灰紫色那套画得比原图好看”。</div>
+          </div>
+        </li>
+        <li>
+          <span class="list-num">6</span>
+          <div class="list-body">
+            <div class="list-title">推特空间话题 #汐梦瑶秋季穿搭 进入趋势榜</div>
+            <div class="list-desc">11月8日上午进入趋势榜第9位，相关推文约240条。多数为粉丝晒同款或仿搭，原推互动占比不到两成。</div>
+          </div>
+        </li>
+        <li>
+          <span class="list-num">7</span>
+          <div class="list-body">
+            <div class="list-title">旧推文「春季开箱」被重新翻出</div>
+            <div class="list-desc">11月7日有用户引用4月12日的开箱推文，对比本次秋季合辑的选品变化，指出“从彩妆转向了服饰”。该引用获赞1,100。</div>
+          </div>
+        </li>
+        <li>
+          <span class="list-num">8</span>
+          <div class="list-body">
+            <div class="list-title">提问箱回复中的设备信息被单独整理</div>
+            <div class="list-desc">11月6日，有粉丝将10月28日长图中的设备与修图信息整理成表格，标注“iPhone 13 mini + Lightroom”，转发量超过原图。</div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 板块4：分类入口 -->
+    <section class="section" id="categories">
+      <div class="section-head">
+        <h2 class="section-title">内容分类</h2>
+        <span class="section-sub">按条目类型筛选</span>
+      </div>
+      <div class="cat-grid" id="catGrid">
+        <button class="cat-btn active" data-cat="all">全部条目</button>
+        <button class="cat-btn" data-cat="outfit">穿搭合辑</button>
+        <button class="cat-btn" data-cat="daily">日常随拍</button>
+        <button class="cat-btn" data-cat="video">短视频片段</button>
+        <button class="cat-btn" data-cat="voice">语音房节选</button>
+        <button class="cat-btn" data-cat="qa">问答长图</button>
+        <button class="cat-btn" data-cat="unbox">开箱记录</button>
+        <button class="cat-btn" data-cat="fan">粉丝互动</button>
+      </div>
+      <div class="search-feedback" id="searchFeedback"></div>
+    </section>
+
+    <!-- 板块5：深度解析 -->
+    <section class="section" id="deepread">
+      <div class="section-head">
+        <h2 class="section-title">深度解析｜图文合辑的观看顺序与判断依据</h2>
+      </div>
+      <div class="deep-read">
+        <h3>一、先看时间水印，再看滤镜</h3>
+        <p>汐梦瑶的图文合辑大多带手机时间水印。11月3日的开衫对比拍于下午14:06—14:38，光线从侧窗进入，三件开衫的拍摄间隔不超过半小时。11月6日的便利店随拍标注22:47，画面里玻璃反光有路灯和店内白光两个光源。两组图的色温差异主要来自环境光，不是后期调色。判断一组图有没有过度修图，先看水印时间是否连续，再看同一组图里阴影方向是否一致。开衫那组阴影从左上往右下走，三张一致；便利店那组受两处光源影响，阴影方向不统一，但每张内部自洽。</p>
+
+        <h3>二、穿搭类条目的信息密度分层</h3>
+        <p>不是所有穿搭推文都提供同等信息。以11月5日的外套叠穿为例，三套方案分别标注了“15℃—18℃”“12℃—15℃”“10℃—12℃”。评论区指出第二套“连帽衫加西装在15℃以下不现实”，这个判断有依据：连帽衫的帽兜叠在西装领口下会增加肩部厚度，实际体感温度比标注低2℃左右。第一套风衣加针织马甲则被较少质疑，因为风衣本身有防风层。信息密度高的条目通常具备三个要素：温度区间、具体单品名、搭配理由。三者缺一，参考价值就打折扣。</p>
+
+        <h3>三、语音房节选的二次传播损耗</h3>
+        <p>11月2日的语音房原录屏42分钟，被剪辑传播最广的片段只有1分17秒，内容是回应“更新频率为什么降低”。原话是“11月会少一些，因为要处理一些线下的事，具体不方便说”，剪辑版保留了“11月会少一些”，删掉了后半句。这个删减改变了语义——原话是有限度的说明，剪辑版看起来像预告减少更新。核对方法很简单：找到录屏时间戳，对比前后30秒的上下文。目前文字版整理到 12:40—18:20 段，原话完整保留。</p>
+
+        <h3>四、提问箱回复的可引用部分</h3>
+        <p>10月28日的17问长图里，真正包含新信息的是第3问（设备）、第7问（修图）、第12问（视频教程）和第15问（更新节奏）。其余多为寒暄或重复回答。第12问的回答原文是“在学剪辑，没定时间”，被搬运后变成“即将出教程”，这属于典型的语义升级。判断一条问答有没有被改写，对照原图文字即可。原图的字号和排版没有强调任何一句，搬运号通常会给某一句话加粗或单独截出——加粗的那句往往就是被改写的起点。</p>
+
+        <blockquote>
+          可核对的结构：一条图文推文的可信度可以拆成四项——时间水印是否连续、阴影方向是否一致、单品名称是否具体、温度区间是否有依据。四项里缺两项以上，参考价值就需要打折扣。这个判断标准不适用于语音房和问答，那两类看的是上下文是否完整。
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- 板块6：体验指南 -->
+    <section class="section" id="guide">
+      <div class="section-head">
+        <h2 class="section-title">体验指南｜从哪条开始看，怎么比较</h2>
+      </div>
+      <div class="deep-read" style="padding:22px 26px;">
+        <p>第一次翻这个账号的内容，建议从11月3日的开衫对比入手。原因简单：三件同版型不同色，变量控制得干净，能快速判断拍摄风格和修图尺度。看完这组再去看11月6日的便利店随拍，两组之间的反差会很明显——一组是棚拍式陈列，一组是街头随手拍。这个反差本身就是账号的内容特征，先建立这个印象，再看后面的条目就不容易误判。</p>
+        <p>比较同类条目时，用三个维度：拍摄时间是否标注、单品是否有具体名称、评论区有没有人指出可验证的细节。11月5日的叠穿三套在“单品名称”上得分高，三套都写了具体品类；但在“温度区间”上被评论区挑出问题。11月1日的桌面收纳在“具体名称”上较弱，托盘只写了“木质”，尺寸是粉丝后补的。按这三个维度打分，开衫对比得分最高，便利店随拍次之，桌面收纳最低。</p>
+        <p>语音房和问答长图是另一套看法。语音房先看文字版有没有标注时间戳，有的话直接跳到被讨论最多的片段，再回听前后30秒。问答长图先看第几问被单独截出传播——被截出的那问往往信息量最大，但也最容易被改写，对照原图确认措辞。两条路径都不需要从头看到尾。</p>
+      </div>
+    </section>
+
+    <!-- 板块7：FAQ -->
+    <section class="section" id="faq">
+      <div class="section-head">
+        <h2 class="section-title">常见问答</h2>
+      </div>
+      <div class="faq-list">
+        <details>
+          <summary>汐梦瑶11月8日发了什么新内容？</summary>
+          <div class="faq-answer">11月8日上午9点12分发布了一组九宫格，标题是「秋日私服」，标注拍摄于11月7日下午。9张图均为手机直出，首图外套在评论区被认出是某快时尚品牌当季款。同一天推特空间的话题 #汐梦瑶秋季穿搭 进入趋势榜第9位，相关讨论约240条。</div>
+        </details>
+        <details>
+          <summary>开衫三色对比那组图，灰紫色到底显不显旧？</summary>
+          <div class="faq-answer">评论区分歧集中在这里。认为显旧的理由是灰紫色在室内暖光下偏灰，袖口罗纹处颜色更深；认为不显旧的理由是自然光下灰紫带一点蓝调，和米白叠穿时层次清楚。原推没有给出结论，三张图的拍摄时间分别是14:06、14:19、14:33，光线条件接近，差异主要来自颜色本身。</div>
+        </details>
+        <details>
+          <summary>语音房节选里说的“11月会少一些”完整原话是什么？</summary>
+          <div class="faq-answer">原话是“11月会少一些，因为要处理一些线下的事，具体不方便说”。剪辑版删掉了后半句。录屏时间戳在14:22—16:05之间，文字版整理到18:20。上下文里还提到“12月会恢复”，这句在剪辑版里也没有保留。</div>
+        </details>
+        <details>
+          <summary>提问箱里关于设备的回答，原话是怎么说的？</summary>
+          <div class="faq-answer">第3问的回复原文是“用iPhone 13 mini拍，Lightroom调色，偶尔用VSCO的A6滤镜”。没有提到相机或灯光设备。被搬运时，“iPhone 13 mini”被加粗，后半句的滤镜信息多被省略。原图文字为等宽排版，没有加粗任何一句。</div>
+        </details>
+        <details>
+          <summary>外套叠穿三套方案里，哪套被质疑最多？</summary>
+          <div class="faq-answer">第二套“连帽衫加西装”被质疑最多。质疑理由是帽兜叠在西装领口下会增加肩部厚度，实际体感温度比标注的12℃—15℃低2℃左右。第一套风衣加针织马甲被质疑较少，因为风衣有防风层，温度标注和实际感受差距不大。第三套短夹克加衬衫的讨论集中在“10℃—12℃穿衬衫不现实”，但反驳意见认为内搭可以换高领。</div>
+        </details>
+        <details>
+          <summary>粉丝二创手绘图和原图差别大吗？</summary>
+          <div class="faq-answer">手绘图只还原了配色和大致版型，没有还原面料质感和袖口细节。作者 @lin_sketch 在推文中说明“只参考了颜色和廓形”。汐梦瑶转发时的评论是“灰紫色那套画得比原图好看”，这条评论本身获得约600赞。原图的灰紫色在自然光下偏冷，手绘版调暖了一些。</div>
+        </details>
+      </div>
+    </section>
+
+    <!-- 板块8：用户评论 -->
+    <section class="section" id="comments">
+      <div class="section-head">
+        <h2 class="section-title">读者讨论</h2>
+        <span class="section-sub">来自近期推文评论区与转发</span>
+      </div>
+      <div class="comment-grid">
+        <div class="comment-card"><div class="comment-user"><span class="avatar">A</span>@amber_notes</div><div class="comment-text">开衫那组灰紫色我买了同款，实物比图里深一个度，室内光下确实显旧。米白和燕麦没问题。</div><div class="comment-meta">11月7日</div></div>
+        <div class="comment-card"><div class="comment-user"><span class="avatar">B</span>@夜行电车</div><div class="comment-text">便利店那组第三张构图确实歪，但歪得挺自然。裁掉左边三分之一反而没味道了。</div><div class="comment-meta">11月7日</div></div>
+        <div class="comment-card"><div class="comment-user"><span class="avatar">C</span>@小满不忙</div><div class="comment-text">语音房剪辑版把“12月会恢复”删了，这个有点误导。原录屏我听了两遍，后半句是重点。</div><div class="comment-meta">11月6日</div></div>
+        <div class="comment-card"><div class="comment-user"><span class="avatar">D</span>@lin_sketch</div><div class="comment-text">手绘那三张是我画的，只参考了颜色，版型没画准。被本人转发有点意外。</div><div class="comment-meta">11月7日</div></div>
+        <div class="comment-card"><div class="comment-user"><span class="avatar">E</span>@灰灰不吃鱼</div><div class="comment-text">叠穿第二套我照着搭了，15℃以下确实冷，帽兜压领口，肩膀那块鼓起来。</div><div class="comment-meta">11月6日</div></div>
+        <div class="comment-card"><div class="comment-user"><span class="avatar">F</span>@南窗记录</div><div class="comment-text">提问箱长图信息量最大的是设备那问，但被单独截出来之后，滤镜那句经常被漏掉。A6滤镜其实挺关键的。</div><div class="comment-meta">11月6日</div></div>
+        <div class="comment-card"><div class="comment-user"><span class="avatar">G</span>@一颗菜包</div><div class="comment-text">桌面收纳那个托盘尺寸是后来粉丝补的，原推没写。30×20cm我量过，放刷具刚好。</div><div class="comment-meta">11月5日</div></div>
+        <div class="comment-card"><div class="comment-user"><span class="avatar">H</span>@晚风慢慢</div><div class="comment-text">更新频率降了是真的，10月最后一周只发了两条。但内容质量没掉，比日更的时候耐看。</div><div class="comment-meta">11月5日</div></div>
+        <div class="comment-card"><div class="comment-user"><span class="avatar">I</span>@数码搬砖人</div><div class="comment-text">iPhone 13 mini拍成这样已经不错了，暗光下噪点明显，便利店那组能看出来。换设备的话画质会更好，但手机直出的松弛感就没了。</div><div class="comment-meta">11月4日</div></div>
+        <div class="comment-card"><div class="comment-user"><span class="avatar">J</span>@橘子汽水</div><div class="comment-text">推特的图压缩太狠了，九宫格点开原图还是糊。这个不怪博主，平台问题。</div><div class="comment-meta">11月4日</div></div>
+        <div class="comment-card"><div class="comment-user"><span class="avatar">K</span>@旧书摊</div><div class="comment-text">从春季开箱翻到秋季合辑，选品变化挺明显的。彩妆少了，衣服多了。不知道是不是接的推广方向变了。</div><div class="comment-meta">11月3日</div></div>
+        <div class="comment-card"><div class="comment-user"><span class="avatar">L</span>@半糖去冰</div><div class="comment-text">趋势榜那个话题点进去大半是仿搭，原推的图反而要往下翻。热闹是热闹，信息密度低。</div><div class="comment-meta">11月8日</div></div>
+        <div class="comment-card"><div class="comment-user"><span class="avatar">M</span>@不睡觉的猫</div><div class="comment-text">语音房文字版整理得挺细的，时间戳标到分钟。比听录屏省时间。</div><div class="comment-meta">11月3日</div></div>
+        <div class="comment-card"><div class="comment-user"><span class="avatar">N</span>@晚班地铁</div><div class="comment-text">说实话穿搭类看多了有点腻，想看更多日常随拍那种。随手拍的东西反而有生活气。</div><div class="comment-meta">11月2日</div></div>
+      </div>
+    </section>
+
+    <!-- 板块9：相关资讯 -->
+    <section class="section" id="news">
+      <div class="section-head">
+        <h2 class="section-title">相关资讯</h2>
+      </div>
+      <div class="news-list">
+        <div class="news-item">
+          <span class="news-date">11月8日</span>
+          <div>
+            <div class="news-title">#汐梦瑶秋季穿搭 进入推特趋势榜第9位，相关推文约240条</div>
+            <div class="news-desc">话题在上午10点前后达到峰值，参与账号中粉丝数低于500的占七成。原推互动量占话题总互动的18%，其余主要来自仿搭和晒同款。</div>
+          </div>
+        </div>
+        <div class="news-item">
+          <span class="news-date">11月7日</span>
+          <div>
+            <div class="news-title">粉丝手绘图获本人转发，单条评论获赞600</div>
+            <div class="news-desc">@lin_sketch 发布三张开衫配色手绘，转发量在两小时内超过该账号此前所有推文总和。汐梦瑶的转发评论“灰紫色那套画得比原图好看”被单独引用约40次。</div>
+          </div>
+        </div>
+        <div class="news-item">
+          <span class="news-date">11月6日</span>
+          <div>
+            <div class="news-title">10月28日提问箱长图中的设备信息被整理成表格</div>
+            <div class="news-desc">表格列出设备、修图软件、滤镜三项，转发量1,400，是原长图转发量的1.3倍。整理者注明“仅摘录第3问和第7问”，未覆盖视频教程和更新计划两问。</div>
+          </div>
+        </div>
+        <div class="news-item">
+          <span class="news-date">11月5日</span>
+          <div>
+            <div class="news-title">「外套叠穿三套方案」评论区出现温度争议</div>
+            <div class="news-desc">争议集中在第二套“连帽衫加西装”，有用户实测后指出15℃以下体感温度低2℃左右。原推未修改标注，讨论持续到11月6日，累计约60条回复。</div>
+          </div>
+        </div>
+        <div class="news-item">
+          <span class="news-date">11月4日</span>
+          <div>
+            <div class="news-title">推特图床压缩问题被重新提起，九宫格原图需手动点开</div>
+            <div class="news-desc">有用户对比11月3日开衫合辑的缩略图与原图，指出缩略图丢失了灰紫色的蓝调。该讨论未涉及账号本身，属于平台通用问题，参与账号约20个。</div>
+          </div>
+        </div>
+        <div class="news-item">
+          <span class="news-date">11月3日</span>
+          <div>
+            <div class="news-title">春季开箱旧推被引用，选品方向变化引讨论</div>
+            <div class="news-desc">引用推文对比4月12日与11月3日的条目，指出彩妆占比从六成降到不足两成。该对比获赞1,100，评论中有人认为“服饰更耐看”，也有人认为“彩妆开箱的信息量更大”。</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 板块10：相关推荐 -->
+    <section class="section" id="recommend">
+      <div class="section-head">
+        <h2 class="section-title">相关推荐</h2>
+        <span class="section-sub">具体条目与方向索引</span>
+      </div>
+      <div class="rec-index">
+        <span class="rec-tag">灰紫色开衫实物对比</span>
+        <span class="rec-tag">iPhone 13 mini 拍摄参数</span>
+        <span class="rec-tag">秋季通勤穿搭投票</span>
+        <span class="rec-tag">语音房文字版时间轴</span>
+        <span class="rec-tag">木质托盘尺寸补充</span>
+        <span class="rec-tag">连帽衫加西装体感温度</span>
+        <span class="rec-tag">Lightroom 调色步骤</span>
+        <span class="rec-tag">粉丝二创手绘合集</span>
+      </div>
+    </section>
+
+    <!-- 板块11：补充板块 - 时间线 -->
+    <section class="section" id="contribute">
+      <div class="section-head">
+        <h2 class="section-title">条目时间线 & 投稿入口</h2>
+        <span class="section-sub">近一周关键节点</span>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;" class="timeline-grid">
+        <div class="side-module" style="box-shadow:var(--shadow-sm);">
+          <h4 style="font-size:14px;font-weight:700;margin-bottom:14px;color:var(--primary-deep);">11月2日—11月8日</h4>
+          <ul class="timeline">
+            <li><span class="time">11月8日 09:12</span>「秋日私服九宫格」发布</li>
+            <li><span class="time">11月8日 10:30</span>#汐梦瑶秋季穿搭 进入趋势榜第9位</li>
+            <li><span class="time">11月7日 21:30</span>投票「下一期图文想看什么」发起</li>
+            <li><span class="time">11月7日 18:00</span>粉丝手绘图获本人转发</li>
+            <li><span class="time">11月6日 22:47</span>「夜间便利店随拍」发布</li>
+            <li><span class="time">11月5日 14:20</span>「外套叠穿三套方案」发布</li>
+            <li><span class="time">11月3日 14:06</span>「秋日针织开衫三色对比」发布</li>
+            <li><span class="time">11月2日 20:00</span>周末语音房「秋夜闲聊」开播</li>
+          </ul>
+        </div>
+        <div class="side-module" style="box-shadow:var(--shadow-sm);display:flex;flex-direction:column;justify-content:center;">
+          <h4 style="font-size:14px;font-weight:700;margin-bottom:10px;color:var(--primary-deep);">投稿说明</h4>
+          <p style="font-size:13.5px;color:var(--ink-2);line-height:1.7;margin-bottom:16px;">如果你整理过汐梦瑶的语音房文字版、做过穿搭对比图或写过条目分析，可以通过站内表单提交。目前接受三类内容：文字整理、对比图、短评合集。提交时请附上原推日期和条目名称。</p>
+          <a href="/#contribute" class="btn-primary" style="align-self:flex-start;font-size:13px;padding:9px 20px;">前往投稿 →</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 右侧辅助栏 -->
+  <aside class="sidebar-right" aria-label="辅助信息">
+
+    <div class="side-module">
+      <h4>本周热榜</h4>
+      <ul class="side-list">
+        <li><span class="idx">1</span>秋日针织开衫三色对比</li>
+        <li><span class="idx">2</span>提问箱回复长图（17问）</li>
+        <li><span class="idx">3</span>夜间便利店随拍</li>
+        <li><span class="idx">4</span>外套叠穿三套方案</li>
+        <li><span class="idx">5</span>周末语音房「秋夜闲聊」节选</li>
+        <li><span class="idx">6</span>化妆台桌面收纳版本更新</li>
+        <li><span class="idx">7</span>粉丝二创手绘图</li>
+      </ul>
+    </div>
+
+    <div class="side-module">
+      <h4>更新节奏</h4>
+      <p style="font-size:12.5px;color:var(--ink-3);line-height:1.7;">图文合辑：日更或隔日更<br>短视频片段：每周2—3条<br>语音房：周末晚间，每月2—3场<br>问答长图：每月1次</p>
+    </div>
+
+    <div class="side-module">
+      <h4>热门标签</h4>
+      <div class="side-tags">
+        <span class="side-tag">#秋季穿搭</span>
+        <span class="side-tag">#开衫对比</span>
+        <span class="side-tag">#手机直出</span>
+        <span class="side-tag">#语音房节选</span>
+        <span class="side-tag">#提问箱</span>
+        <span class="side-tag">#粉丝二创</span>
+        <span class="side-tag">#叠穿方案</span>
+        <span class="side-tag">#Lightroom调色</span>
+      </div>
+    </div>
+
+    <div class="side-module">
+      <h4>可信度提示</h4>
+      <p style="font-size:12.5px;color:var(--ink-3);line-height:1.7;">条目信息以原推日期与文字为准。转发内容若出现加粗、单独截取，需对照原图确认。语音房节选注意前后30秒上下文。</p>
+    </div>
+
+  </aside>
+</div>
+
+<!-- ========== 页尾 ========== -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <svg width="24" height="24" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <circle cx="16" cy="16" r="15" fill="#5c3b9e"/>
+            <path d="M8 19c2.5-7 9-11 17-9-1.2 7-6 12-13 13" stroke="#c9a8ff" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          汐梦瑶推特每日
+        </div>
+        <p class="footer-desc">记录2026年10月至11月间汐梦瑶在推特发布的图文、语音与问答类内容，按时间归档，标注原推日期与可核对细节。</p>
+      </div>
+      <div class="footer-col">
+        <h5>内容频道</h5>
+        <a href="/#latest">最新动态</a>
+        <a href="/#featured">精选图文</a>
+        <a href="/#categories">内容分类</a>
+        <a href="/#deepread">深度解析</a>
+        <a href="/#guide">体验指南</a>
+      </div>
+      <div class="footer-col">
+        <h5>互动</h5>
+        <a href="/#comments">读者讨论</a>
+        <a href="/#faq">常见问答</a>
+        <a href="/#contribute">投稿入口</a>
+        <a href="/#recommend">相关推荐</a>
+      </div>
+      <div class="footer-col">
+        <h5>关于</h5>
+        <a href="/#overview">领域概览</a>
+        <a href="/#news">相关资讯</a>
+        <a href="/#hero">回到顶部</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>页面内容为示例条目，事实性信息以原推为准。更新日期：2026年11月8日。</span>
+      <span>© 2026 汐梦瑶推特每日 · 内容聚合示例</span>
+    </div>
+  </div>
+</footer>
+
+<!-- 回到顶部 -->
+<button class="to-top" id="toTop" aria-label="回到顶部">↑</button>
+
+<!-- 结构化数据 -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "汐梦瑶推特每日",
+  "description": "汐梦瑶推特每日聚焦汐梦瑶在推特上的最新动态、图文合辑与话题反应，收录11月8日前后更新条目、精选图集、粉丝讨论与深度解析。",
+  "inLanguage": "zh-CN"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "汐梦瑶11月8日发了什么新内容？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "11月8日上午9点12分发布了一组九宫格，标题是「秋日私服」，标注拍摄于11月7日下午。9张图均为手机直出，首图外套在评论区被认出是某快时尚品牌当季款。同一天推特空间的话题 #汐梦瑶秋季穿搭 进入趋势榜第9位，相关讨论约240条。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "开衫三色对比那组图，灰紫色到底显不显旧？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "评论区分歧集中在这里。认为显旧的理由是灰紫色在室内暖光下偏灰，袖口罗纹处颜色更深；认为不显旧的理由是自然光下灰紫带一点蓝调，和米白叠穿时层次清楚。原推没有给出结论，三张图的拍摄时间分别是14:06、14:19、14:33，光线条件接近，差异主要来自颜色本身。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "语音房节选里说的“11月会少一些”完整原话是什么？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "原话是“11月会少一些，因为要处理一些线下的事，具体不方便说”。剪辑版删掉了后半句。录屏时间戳在14:22—16:05之间，文字版整理到18:20。上下文里还提到“12月会恢复”，这句在剪辑版里也没有保留。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "提问箱里关于设备的回答，原话是怎么说的？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "第3问的回复原文是“用iPhone 13 mini拍，Lightroom调色，偶尔用VSCO的A6滤镜”。没有提到相机或灯光设备。被搬运时，“iPhone 13 mini”被加粗，后半句的滤镜信息多被省略。原图文字为等宽排版，没有加粗任何一句。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "外套叠穿三套方案里，哪套被质疑最多？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "第二套“连帽衫加西装”被质疑最多。质疑理由是帽兜叠在西装领口下会增加肩部厚度，实际体感温度比标注的12℃—15℃低2℃左右。第一套风衣加针织马甲被质疑较少，因为风衣有防风层，温度标注和实际感受差距不大。第三套短夹克加衬衫的讨论集中在“10℃—12℃穿衬衫不现实”，但反驳意见认为内搭可以换高领。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "粉丝二创手绘图和原图差别大吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "手绘图只还原了配色和大致版型，没有还原面料质感和袖口细节。作者 @lin_sketch 在推文中说明“只参考了颜色和廓形”。汐梦瑶转发时的评论是“灰紫色那套画得比原图好看”，这条评论本身获得约600赞。原图的灰紫色在自然光下偏冷，手绘版调暖了一些。"
+      }
+    }
+  ]
+}
+</script>
+
+<!-- 交互脚本 -->
+<script>
+  (function() {
+    // 搜索功能
+    const searchInput = document.getElementById('searchInput');
+    const searchBtn = document.getElementById('searchBtn');
+    const searchFeedback = document.getElementById('searchFeedback');
+    const cards = document.querySelectorAll('.card');
+    const sections = document.querySelectorAll('.section');
+
+    function doSearch() {
+      const q = searchInput.value.trim().toLowerCase();
+      if (!q) {
+        searchFeedback.classList.remove('show');
+        cards.forEach(c => c.style.display = '');
+        return;
+      }
+      let count = 0;
+      cards.forEach(card => {
+        const text = card.textContent.toLowerCase();
+        if (text.includes(q)) {
+          card.style.display = '';
+          count++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+      searchFeedback.textContent = count > 0 ? `找到 ${count} 张相关卡片` : '没有匹配的条目，试试「开衫」「语音房」「提问箱」';
+      searchFeedback.classList.add('show');
+    }
+
+    searchBtn.addEventListener('click', doSearch);
+    searchInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') doSearch(); });
+
+    // 分类筛选
+    const catBtns = document.querySelectorAll('.cat-btn');
+    const cardMap = {
+      outfit: ['开衫', '叠穿'],
+      daily: ['便利店', '随拍'],
+      video: ['短视频', '片段'],
+      voice: ['语音房', '录屏'],
+      qa: ['提问箱', '问答'],
+      unbox: ['开箱', '桌面'],
+      fan: ['粉丝', '二创', '手绘']
+    };
+    catBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        catBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const cat = btn.dataset.cat;
+        if (cat === 'all') {
+          cards.forEach(c => c.style.display = '');
+          searchFeedback.classList.remove('show');
+          return;
+        }
+        const keywords = cardMap[cat] || [];
+        let count = 0;
+        cards.forEach(card => {
+          const text = card.textContent;
+          if (keywords.some(k => text.includes(k))) {
+            card.style.display = '';
+            count++;
+          } else {
+            card.style.display = 'none';
+          }
+        });
+        searchFeedback.textContent = `筛选出 ${count} 张「${btn.textContent}」卡片`;
+        searchFeedback.classList.add('show');
+      });
+    });
+
+    // 回到顶部
+    const toTop = document.getElementById('toTop');
+    window.addEventListener('scroll', () => {
+      toTop.classList.toggle('show', window.scrollY > 600);
+    });
+    toTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // 移动端菜单
+    const hamburger = document.getElementById('hamburgerBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuOverlay = document.getElementById('menuOverlay');
+    const menuClose = document.getElementById('menuClose');
+    const menuLinks = mobileMenu.querySelectorAll('a');
+
+    function openMenu() {
+      mobileMenu.classList.add('open');
+      mobileMenu.setAttribute('aria-hidden', 'false');
+      hamburger.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeMenu() {
+      mobileMenu.classList.remove('open');
+      mobileMenu.setAttribute('aria-hidden', 'true');
+      hamburger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+
+    hamburger.addEventListener('click', openMenu);
+    menuClose.addEventListener('click', closeMenu);
+    menuOverlay.addEventListener('click', closeMenu);
+    menuLinks.forEach(link => link.addEventListener('click', closeMenu));
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && mobileMenu.classList.contains('open')) closeMenu();
+    });
+
+    // 频道高亮（简单滚动监听）
+    const channelLinks = document.querySelectorAll('.channel-list a');
+    const sectionIds = ['latest','featured','categories','deepread','guide','faq','comments','news','recommend','contribute'];
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sectionIds.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) {
+          const rect = el.getBoundingClientRect();
+          if (rect.top < 200 && rect.bottom > 200) current = id;
+        }
+      });
+      channelLinks.forEach(link => {
+        link.classList.toggle('active', link.getAttribute('href') === '/#' + current);
+      });
+    });
+  })();
+</script>
+</body>
+  </html>
