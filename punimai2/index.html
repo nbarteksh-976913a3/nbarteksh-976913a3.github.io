@@ -1,0 +1,2083 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>朴妮唛28部资源 - 作品索引与观看指南</title>
+  <meta name="description" content="朴妮唛28部资源收录28部代表性作品，含分类索引、最新动态、深度解析与观众评论，适合想系统了解或补全观看顺序的观众。">
+  <meta name="keywords" content="朴妮唛28部资源">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231e1b4b'/%3E%3Ctext x='16' y='22' font-size='16' text-anchor='middle' fill='%23fca5a5' font-family='sans-serif'%3E朴%3C/text%3E%3C/svg%3E">
+  <style>
+    :root {
+      --primary: #1e1b4b;
+      --primary-light: #312e81;
+      --primary-soft: #eef2ff;
+      --accent: #e11d48;
+      --accent-soft: #ffe4e6;
+      --bg: #f8fafc;
+      --surface: #ffffff;
+      --text-primary: #0f172a;
+      --text-secondary: #475569;
+      --text-tertiary: #94a3b8;
+      --border: #e2e8f0;
+      --radius-card: 14px;
+      --radius-btn: 10px;
+      --radius-tag: 6px;
+      --radius-banner: 18px;
+      --shadow-default: 0 1px 3px rgba(15, 23, 42, 0.06), 0 1px 2px rgba(15, 23, 42, 0.04);
+      --shadow-hover: 0 8px 24px rgba(15, 23, 42, 0.1);
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+      --header-height: 56px;
+      --announce-height: 36px;
+      --sticky-offset: 100px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: var(--sticky-offset);
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background: var(--bg);
+      color: var(--text-primary);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
+    img { max-width: 100%; display: block; }
+
+    /* ===== 吸顶公告条 ===== */
+    .announce-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--primary);
+      color: #e0e7ff;
+      font-size: 13px;
+      height: var(--announce-height);
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+    .announce-inner {
+      max-width: 1360px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      white-space: nowrap;
+      width: 100%;
+    }
+    .announce-brand {
+      font-weight: 700;
+      color: #fca5a5;
+      flex-shrink: 0;
+    }
+    .announce-items {
+      display: flex;
+      gap: 24px;
+      overflow-x: auto;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+    .announce-items::-webkit-scrollbar { display: none; }
+    .announce-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-shrink: 0;
+    }
+    .announce-date {
+      background: rgba(255,255,255,0.12);
+      padding: 1px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      color: #c7d2fe;
+    }
+    .announce-tag {
+      background: var(--accent);
+      color: #fff;
+      padding: 1px 6px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 600;
+    }
+
+    /* ===== 吸顶页头 ===== */
+    .site-header {
+      position: sticky;
+      top: var(--announce-height);
+      z-index: 99;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      height: var(--header-height);
+    }
+    .header-inner {
+      max-width: 1360px;
+      margin: 0 auto;
+      padding: 0 20px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+    .logo-mark {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fca5a5;
+      font-weight: 800;
+      font-size: 15px;
+      letter-spacing: -0.5px;
+    }
+    .logo-text {
+      font-size: 17px;
+      font-weight: 800;
+      color: var(--primary);
+      letter-spacing: 0.3px;
+    }
+    .header-nav {
+      display: flex;
+      gap: 4px;
+      flex: 1;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .header-nav::-webkit-scrollbar { display: none; }
+    .header-nav a {
+      font-size: 13.5px;
+      color: var(--text-secondary);
+      padding: 6px 12px;
+      border-radius: var(--radius-btn);
+      white-space: nowrap;
+      transition: background 0.15s, color 0.15s;
+    }
+    .header-nav a:hover,
+    .header-nav a:focus-visible {
+      background: var(--primary-soft);
+      color: var(--primary);
+      outline: none;
+    }
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+    .search-box {
+      display: flex;
+      align-items: center;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-btn);
+      padding: 0 10px;
+      height: 34px;
+      width: 180px;
+      transition: border-color 0.15s;
+    }
+    .search-box:focus-within {
+      border-color: var(--primary-light);
+    }
+    .search-box input {
+      border: none;
+      background: transparent;
+      outline: none;
+      font-size: 13px;
+      font-family: inherit;
+      color: var(--text-primary);
+      width: 100%;
+      padding: 0 4px;
+    }
+    .search-box input::placeholder { color: var(--text-tertiary); }
+    .search-box button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--text-tertiary);
+      font-size: 15px;
+      padding: 2px;
+      display: flex;
+      align-items: center;
+    }
+    .hamburger {
+      display: none;
+      background: none;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      width: 34px;
+      height: 34px;
+      cursor: pointer;
+      color: var(--primary);
+      font-size: 18px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* ===== 首屏 ===== */
+    .hero {
+      background: linear-gradient(135deg, #1e1b4b 0%, #312e81 45%, #4c1d95 100%);
+      color: #fff;
+      padding: 52px 20px 48px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      right: -80px;
+      top: -120px;
+      width: 420px;
+      height: 420px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(225, 29, 72, 0.18) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      left: 10%;
+      bottom: -100px;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(99, 102, 241, 0.22) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero-inner {
+      max-width: 1360px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 48px;
+      position: relative;
+      z-index: 1;
+    }
+    .hero-content { flex: 1; min-width: 0; }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 100px;
+      padding: 3px 14px;
+      font-size: 12px;
+      color: #c7d2fe;
+      margin-bottom: 16px;
+    }
+    .hero h1 {
+      font-size: clamp(28px, 4vw, 40px);
+      font-weight: 800;
+      line-height: 1.25;
+      margin-bottom: 14px;
+      letter-spacing: -0.5px;
+    }
+    .hero-desc {
+      font-size: 15px;
+      line-height: 1.7;
+      color: #c7d2fe;
+      max-width: 560px;
+      margin-bottom: 24px;
+    }
+    .hero-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--accent);
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 10px 22px;
+      border-radius: var(--radius-btn);
+      border: none;
+      cursor: pointer;
+      transition: background 0.15s, transform 0.15s;
+      font-family: inherit;
+    }
+    .btn-primary:hover { background: #be123c; transform: translateY(-1px); }
+    .btn-ghost {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: transparent;
+      color: #e0e7ff;
+      font-size: 14px;
+      font-weight: 500;
+      padding: 10px 22px;
+      border-radius: var(--radius-btn);
+      border: 1px solid rgba(255,255,255,0.25);
+      cursor: pointer;
+      transition: background 0.15s;
+      font-family: inherit;
+    }
+    .btn-ghost:hover { background: rgba(255,255,255,0.08); }
+
+    .hero-visual {
+      flex-shrink: 0;
+      width: 280px;
+      height: 280px;
+      position: relative;
+    }
+    .hero-visual svg { width: 100%; height: 100%; }
+    .hero-float-label {
+      position: absolute;
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(6px);
+      border: 1px solid rgba(255,255,255,0.18);
+      border-radius: 8px;
+      padding: 5px 12px;
+      font-size: 12px;
+      color: #e0e7ff;
+      white-space: nowrap;
+    }
+    .hero-float-label.f1 { top: 18px; left: -10px; }
+    .hero-float-label.f2 { bottom: 30px; right: -16px; }
+
+    /* ===== 主布局（三栏） ===== */
+    .main-wrap {
+      max-width: 1360px;
+      margin: 0 auto;
+      padding: 32px 20px 60px;
+      display: grid;
+      grid-template-columns: 170px 1fr 248px;
+      gap: 32px;
+      align-items: start;
+    }
+
+    /* 左频道索引 */
+    .channel-sidebar {
+      position: sticky;
+      top: calc(var(--announce-height) + var(--header-height) + 20px);
+    }
+    .channel-sidebar h3 {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-tertiary);
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 12px;
+      padding-left: 10px;
+    }
+    .channel-list { display: flex; flex-direction: column; gap: 2px; }
+    .channel-list a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13.5px;
+      color: var(--text-secondary);
+      padding: 7px 10px;
+      border-radius: 8px;
+      transition: background 0.15s, color 0.15s;
+    }
+    .channel-list a:hover,
+    .channel-list a:focus-visible,
+    .channel-list a.active {
+      background: var(--primary-soft);
+      color: var(--primary);
+      outline: none;
+    }
+    .channel-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--text-tertiary);
+      flex-shrink: 0;
+    }
+    .channel-list a.active .channel-dot,
+    .channel-list a:hover .channel-dot { background: var(--accent); }
+
+    /* 中主内容 */
+    .main-content { min-width: 0; display: flex; flex-direction: column; gap: 40px; }
+
+    /* 右辅助栏 */
+    .sidebar-right {
+      position: sticky;
+      top: calc(var(--announce-height) + var(--header-height) + 20px);
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    .sidebar-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-card);
+      padding: 16px;
+      box-shadow: var(--shadow-default);
+    }
+    .sidebar-card h3 {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .sidebar-card h3::before {
+      content: '';
+      width: 3px;
+      height: 14px;
+      border-radius: 2px;
+      background: var(--accent);
+    }
+    .hot-list { display: flex; flex-direction: column; gap: 2px; }
+    .hot-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 6px 4px;
+      font-size: 13px;
+      color: var(--text-secondary);
+      border-radius: 6px;
+      transition: background 0.15s;
+    }
+    .hot-item:hover { background: var(--bg); }
+    .hot-rank {
+      width: 18px;
+      height: 18px;
+      border-radius: 4px;
+      background: var(--bg);
+      color: var(--text-tertiary);
+      font-size: 11px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .hot-item:nth-child(1) .hot-rank { background: var(--accent); color: #fff; }
+    .hot-item:nth-child(2) .hot-rank { background: #fb923c; color: #fff; }
+    .hot-item:nth-child(3) .hot-rank { background: #fbbf24; color: #fff; }
+
+    /* ===== 板块通用 ===== */
+    .section-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+    }
+    .section-head h2 {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--primary);
+      letter-spacing: -0.3px;
+    }
+    .section-head .section-note {
+      font-size: 12.5px;
+      color: var(--text-tertiary);
+    }
+
+    /* 领域概览 */
+    .overview-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-card);
+      padding: 24px 26px;
+      box-shadow: var(--shadow-default);
+    }
+    .overview-box p {
+      font-size: 14.5px;
+      line-height: 1.8;
+      color: var(--text-secondary);
+      margin-bottom: 12px;
+    }
+    .overview-box p:last-child { margin-bottom: 0; }
+    .overview-box strong { color: var(--text-primary); font-weight: 600; }
+
+    /* 精选卡片网格 */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 16px;
+    }
+    .work-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-card);
+      overflow: hidden;
+      box-shadow: var(--shadow-default);
+      transition: transform 0.2s, box-shadow 0.2s;
+      display: flex;
+      flex-direction: column;
+    }
+    .work-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-hover);
+    }
+    .work-card-img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      background: var(--primary-soft);
+    }
+    .work-card-body {
+      padding: 12px 14px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      flex: 1;
+    }
+    .work-card-title {
+      font-size: 14.5px;
+      font-weight: 700;
+      color: var(--text-primary);
+      line-height: 1.35;
+    }
+    .work-card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+    .tag {
+      font-size: 11px;
+      padding: 1px 7px;
+      border-radius: var(--radius-tag);
+      background: var(--primary-soft);
+      color: var(--primary-light);
+      white-space: nowrap;
+    }
+    .tag.accent { background: var(--accent-soft); color: #be123c; }
+    .work-card-desc {
+      font-size: 12.5px;
+      color: var(--text-secondary);
+      line-height: 1.55;
+      flex: 1;
+    }
+    .work-card-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 11.5px;
+      color: var(--text-tertiary);
+      padding-top: 6px;
+      border-top: 1px solid var(--border);
+      margin-top: 4px;
+    }
+
+    /* 最新更新列表 */
+    .update-list { display: flex; flex-direction: column; gap: 0; }
+    .update-item {
+      display: flex;
+      gap: 14px;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border);
+      align-items: flex-start;
+    }
+    .update-item:last-child { border-bottom: none; }
+    .update-date {
+      font-size: 12px;
+      color: var(--text-tertiary);
+      white-space: nowrap;
+      flex-shrink: 0;
+      width: 70px;
+      padding-top: 1px;
+    }
+    .update-body { flex: 1; min-width: 0; }
+    .update-title {
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 2px;
+    }
+    .update-desc {
+      font-size: 12.5px;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+
+    /* 分类入口 */
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+    .category-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-btn);
+      padding: 14px 8px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--primary);
+      text-align: center;
+      transition: background 0.15s, border-color 0.15s;
+      cursor: pointer;
+    }
+    .category-item:hover {
+      background: var(--primary-soft);
+      border-color: var(--primary-light);
+    }
+    .category-item .cat-count {
+      font-size: 11px;
+      font-weight: 400;
+      color: var(--text-tertiary);
+    }
+
+    /* 深度解析 */
+    .deep-dive {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-card);
+      padding: 28px 30px;
+      box-shadow: var(--shadow-default);
+    }
+    .deep-dive h2 {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 20px;
+    }
+    .deep-dive h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--primary);
+      margin: 22px 0 10px;
+      padding-left: 12px;
+      border-left: 3px solid var(--accent);
+    }
+    .deep-dive h3:first-of-type { margin-top: 0; }
+    .deep-dive p {
+      font-size: 14px;
+      line-height: 1.8;
+      color: var(--text-secondary);
+      margin-bottom: 10px;
+    }
+    .deep-dive ul {
+      margin: 8px 0 12px 18px;
+      list-style: disc;
+    }
+    .deep-dive li {
+      font-size: 13.5px;
+      line-height: 1.7;
+      color: var(--text-secondary);
+      margin-bottom: 5px;
+    }
+    .deep-dive .callout {
+      background: var(--primary-soft);
+      border-left: 3px solid var(--primary-light);
+      border-radius: 0 8px 8px 0;
+      padding: 12px 16px;
+      margin: 12px 0;
+      font-size: 13.5px;
+      color: var(--primary);
+      line-height: 1.7;
+    }
+
+    /* 体验指南 */
+    .guide-steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 14px;
+    }
+    .guide-step {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-card);
+      padding: 18px;
+      box-shadow: var(--shadow-default);
+      position: relative;
+    }
+    .guide-step-num {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: #fff;
+      font-size: 13px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+    .guide-step h4 {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 6px;
+    }
+    .guide-step p {
+      font-size: 12.5px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* FAQ */
+    .faq-list { display: flex; flex-direction: column; gap: 8px; }
+    .faq-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-btn);
+      overflow: hidden;
+      transition: border-color 0.15s;
+    }
+    .faq-item[open] { border-color: var(--primary-light); }
+    .faq-item summary {
+      padding: 13px 16px;
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--text-primary);
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after {
+      content: '+';
+      font-size: 18px;
+      color: var(--text-tertiary);
+      font-weight: 400;
+      flex-shrink: 0;
+      transition: transform 0.2s;
+    }
+    .faq-item[open] summary::after {
+      content: '−';
+      color: var(--primary-light);
+    }
+    .faq-answer {
+      padding: 0 16px 14px;
+      font-size: 13px;
+      line-height: 1.7;
+      color: var(--text-secondary);
+    }
+
+    /* 用户评论 */
+    .comment-list { display: flex; flex-direction: column; gap: 10px; }
+    .comment-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-btn);
+      padding: 12px 14px;
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+    }
+    .comment-avatar {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: var(--primary-soft);
+      color: var(--primary);
+      font-size: 12px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .comment-body { flex: 1; min-width: 0; }
+    .comment-meta {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      margin-bottom: 3px;
+    }
+    .comment-nick {
+      font-size: 12.5px;
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+    .comment-time {
+      font-size: 11px;
+      color: var(--text-tertiary);
+    }
+    .comment-text {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* 相关资讯 */
+    .news-list { display: flex; flex-direction: column; gap: 12px; }
+    .news-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-btn);
+      padding: 14px 16px;
+      transition: box-shadow 0.15s;
+    }
+    .news-item:hover { box-shadow: var(--shadow-hover); }
+    .news-header {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      margin-bottom: 4px;
+      flex-wrap: wrap;
+    }
+    .news-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+    .news-date {
+      font-size: 11.5px;
+      color: var(--text-tertiary);
+      white-space: nowrap;
+    }
+    .news-summary {
+      font-size: 12.5px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* 相关推荐 */
+    .rec-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .rec-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      padding: 5px 14px;
+      font-size: 12.5px;
+      color: var(--text-secondary);
+      transition: background 0.15s, border-color 0.15s, color 0.15s;
+    }
+    .rec-tag:hover {
+      background: var(--primary-soft);
+      border-color: var(--primary-light);
+      color: var(--primary);
+    }
+    .rec-tag .rec-count {
+      font-size: 10.5px;
+      color: var(--text-tertiary);
+    }
+
+    /* 补充板块：可信度分层 */
+    .credibility-panel {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+    .cred-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-card);
+      padding: 16px;
+      box-shadow: var(--shadow-default);
+    }
+    .cred-card h4 {
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .cred-badge {
+      font-size: 10px;
+      padding: 1px 7px;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+    .cred-badge.high { background: #dcfce7; color: #166534; }
+    .cred-badge.mid { background: #fef9c3; color: #854d0e; }
+    .cred-badge.low { background: #fee2e2; color: #991b1b; }
+    .cred-card p {
+      font-size: 12px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* 互动栏目 */
+    .interact-banner {
+      background: linear-gradient(120deg, var(--primary) 0%, var(--primary-light) 100%);
+      border-radius: var(--radius-banner);
+      padding: 26px 30px;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .interact-banner h3 {
+      font-size: 17px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .interact-banner p {
+      font-size: 13px;
+      color: #c7d2fe;
+    }
+
+    /* ===== 页尾 ===== */
+    .site-footer {
+      background: var(--primary);
+      color: #c7d2fe;
+      padding: 40px 20px 32px;
+      margin-top: 20px;
+    }
+    .footer-inner {
+      max-width: 1360px;
+      margin: 0 auto;
+    }
+    .footer-top {
+      display: grid;
+      grid-template-columns: 1.4fr repeat(3, 1fr);
+      gap: 36px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid rgba(255,255,255,0.12);
+    }
+    .footer-brand {
+      font-size: 17px;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .footer-brand .footer-mark {
+      width: 26px;
+      height: 26px;
+      border-radius: 6px;
+      background: var(--accent);
+      color: #fff;
+      font-size: 13px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .footer-desc {
+      font-size: 13px;
+      line-height: 1.7;
+      color: #a5b4fc;
+      max-width: 320px;
+    }
+    .footer-col h4 {
+      font-size: 13px;
+      font-weight: 700;
+      color: #e0e7ff;
+      margin-bottom: 10px;
+    }
+    .footer-col a {
+      display: block;
+      font-size: 12.5px;
+      color: #a5b4fc;
+      padding: 3px 0;
+      transition: color 0.15s;
+    }
+    .footer-col a:hover { color: #fff; }
+    .footer-bottom {
+      padding-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      font-size: 12px;
+      color: #818cf8;
+    }
+
+    /* 回到顶部 */
+    .back-top {
+      position: fixed;
+      right: 24px;
+      bottom: 28px;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: var(--shadow-hover);
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(8px);
+      transition: opacity 0.25s, transform 0.25s, visibility 0.25s;
+      z-index: 90;
+    }
+    .back-top.visible {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+    .back-top:hover { background: var(--accent); }
+
+    /* 移动端菜单遮罩 */
+    .menu-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.45);
+      z-index: 95;
+    }
+    .menu-overlay.active { display: block; }
+
+    /* 搜索无结果提示 */
+    .no-results {
+      display: none;
+      padding: 24px;
+      text-align: center;
+      font-size: 13.5px;
+      color: var(--text-tertiary);
+      background: var(--surface);
+      border: 1px dashed var(--border);
+      border-radius: var(--radius-btn);
+    }
+
+    /* ===== 响应式 ===== */
+    @media (max-width: 1024px) {
+      .main-wrap {
+        grid-template-columns: 1fr 240px;
+        gap: 24px;
+      }
+      .channel-sidebar { display: none; }
+      .hero-visual { width: 220px; height: 220px; }
+      .header-nav { display: none; }
+      .hamburger { display: flex; }
+      .search-box { width: 140px; }
+      .footer-top { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 740px) {
+      :root {
+        --header-height: 52px;
+        --announce-height: 34px;
+        --sticky-offset: 88px;
+      }
+      .main-wrap {
+        grid-template-columns: 1fr;
+        padding: 20px 14px 40px;
+        gap: 28px;
+      }
+      .sidebar-right {
+        position: static;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+      }
+      .hero { padding: 34px 16px 32px; }
+      .hero-inner { flex-direction: column; gap: 24px; }
+      .hero-visual { width: 200px; height: 200px; align-self: center; }
+      .hero-float-label.f1 { left: -4px; }
+      .hero-float-label.f2 { right: -6px; }
+      .card-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 12px; }
+      .category-grid { grid-template-columns: repeat(2, 1fr); }
+      .credibility-panel { grid-template-columns: 1fr; }
+      .footer-top { grid-template-columns: 1fr; gap: 22px; }
+      .interact-banner { padding: 20px; }
+      .deep-dive { padding: 20px 18px; }
+      .overview-box { padding: 18px; }
+      .search-box { display: none; }
+      .back-top { right: 14px; bottom: 18px; width: 38px; height: 38px; }
+      .header-inner { gap: 14px; }
+      .announce-inner { padding: 0 14px; gap: 12px; }
+    }
+
+    @media (max-width: 420px) {
+      .sidebar-right { grid-template-columns: 1fr; }
+      .card-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+      .work-card-desc { display: none; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+    }
+  </style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+  <!-- 吸顶公告条 -->
+  <div class="announce-bar" id="announceBar">
+    <div class="announce-inner">
+      <span class="announce-brand">朴妮唛28部资源</span>
+      <div class="announce-items">
+        <span class="announce-item">
+          <span class="announce-date">2026-11-08</span>
+          <span>《夜色首尔》第3集更新</span>
+          <span class="announce-tag">新增</span>
+        </span>
+        <span class="announce-item">
+          <span class="announce-date">2026-11-06</span>
+          <span>28部全目录索引页上线</span>
+        </span>
+        <span class="announce-item">
+          <span class="announce-date">2026-11-03</span>
+          <span>《便利店夜班》幕后花絮收录</span>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 吸顶页头 -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="logo" aria-label="朴妮唛28部资源首页">
+        <span class="logo-mark">朴</span>
+        <span class="logo-text">朴妮唛28部资源</span>
+      </a>
+      <nav class="header-nav" aria-label="主题导航">
+        <a href="/#overview">领域概览</a>
+        <a href="/#featured">精选作品</a>
+        <a href="/#updates">最新更新</a>
+        <a href="/#categories">分类索引</a>
+        <a href="/#deep-dive">深度解析</a>
+        <a href="/#guide">观看指南</a>
+        <a href="/#faq">常见问答</a>
+        <a href="/#comments">观众评论</a>
+        <a href="/#news">相关资讯</a>
+      </nav>
+      <div class="header-actions">
+        <div class="search-box">
+          <input type="text" id="searchInput" placeholder="搜索作品名或类型" aria-label="搜索资源">
+          <button type="button" id="searchBtn" aria-label="搜索">⌕</button>
+        </div>
+        <button class="hamburger" id="hamburgerBtn" aria-label="打开导航菜单" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="menu-overlay" id="menuOverlay"></div>
+
+  <!-- 首屏 -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <span class="hero-badge">◆ 28部作品 · 持续收录</span>
+        <h1>朴妮唛28部资源</h1>
+        <p class="hero-desc">
+          按年份、题材与播放量整理的28部作品索引，含每部时长、上线平台、幕后花絮来源和观众评分分布，适合补全观看顺序或按题材检索。
+        </p>
+        <div class="hero-actions">
+          <a href="/#featured" class="btn-primary">浏览精选作品</a>
+          <a href="/#deep-dive" class="btn-ghost">查看深度解析</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <svg viewBox="0 0 280 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="140" cy="140" r="110" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+          <circle cx="140" cy="140" r="78" stroke="rgba(255,255,255,0.14)" stroke-width="1.5"/>
+          <circle cx="140" cy="140" r="46" stroke="rgba(255,255,255,0.18)" stroke-width="1.5"/>
+          <circle cx="140" cy="140" r="18" fill="rgba(225,29,72,0.55)"/>
+          <circle cx="140" cy="140" r="6" fill="#fca5a5"/>
+          <line x1="140" y1="30" x2="140" y2="62" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+          <line x1="140" y1="218" x2="140" y2="250" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+          <line x1="30" y1="140" x2="62" y2="140" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+          <line x1="218" y1="140" x2="250" y2="140" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+          <circle cx="88" cy="82" r="4" fill="#818cf8"/>
+          <circle cx="196" cy="198" r="4" fill="#fca5a5"/>
+          <circle cx="80" cy="188" r="3" fill="#c7d2fe"/>
+          <circle cx="202" cy="76" r="3" fill="#c7d2fe"/>
+        </svg>
+        <span class="hero-float-label f1">28部 · 全目录</span>
+        <span class="hero-float-label f2">持续更新中</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 主布局：三栏 -->
+  <div class="main-wrap">
+
+    <!-- 左频道索引 -->
+    <aside class="channel-sidebar" aria-label="频道索引">
+      <h3>频道导航</h3>
+      <nav class="channel-list">
+        <a href="/#overview" class="active"><span class="channel-dot"></span>领域概览</a>
+        <a href="/#featured"><span class="channel-dot"></span>精选作品</a>
+        <a href="/#updates"><span class="channel-dot"></span>最新更新</a>
+        <a href="/#categories"><span class="channel-dot"></span>分类索引</a>
+        <a href="/#deep-dive"><span class="channel-dot"></span>深度解析</a>
+        <a href="/#guide"><span class="channel-dot"></span>观看指南</a>
+        <a href="/#faq"><span class="channel-dot"></span>常见问答</a>
+        <a href="/#comments"><span class="channel-dot"></span>观众评论</a>
+        <a href="/#news"><span class="channel-dot"></span>相关资讯</a>
+        <a href="/#recommend"><span class="channel-dot"></span>相关推荐</a>
+        <a href="/#credibility"><span class="channel-dot"></span>可信度分层</a>
+        <a href="/#interact"><span class="channel-dot"></span>投稿交流</a>
+      </nav>
+    </aside>
+
+    <!-- 中主内容 -->
+    <main class="main-content">
+
+      <!-- 1. 主题领域概览 -->
+      <section id="overview" class="section-block">
+        <div class="section-head">
+          <h2>领域概览：28部作品覆盖的类型版图</h2>
+        </div>
+        <div class="overview-box">
+          <p>
+            朴妮唛的作品以<strong>都市夜班、职场日常、情感短剧</strong>三条线为主。从2019年《夜色首尔》到2026年《便利店夜班》第二季，28部资源里时长在8到45分钟之间浮动，其中12部为单集短片，16部为多集系列。题材上，夜班场景出现11次，便利店场景7次，出租屋场景9次。
+          </p>
+          <p>
+            观众讨论热度集中在前六部：<strong>《夜色首尔》《便利店夜班》《出租屋日记》《午夜咖啡》《通勤路上》《雨停之前》</strong>。评分区间在7.2到9.1之间，豆瓣短评区累计条目超过400条。其中《夜色首尔》第3集因2026年10月重剪版上线，单日播放量回升至28万，是近三个月最高值。
+          </p>
+          <p>
+            幕后花絮目前收录了9部，来源包括导演手记3篇、演员访谈4篇、拍摄现场侧拍2组。这些材料在“深度解析”板块按可信度分层标注，区分官方发布与观众转录。
+          </p>
+        </div>
+      </section>
+
+      <!-- 2. 精选内容推荐 -->
+      <section id="featured" class="section-block">
+        <div class="section-head">
+          <h2>精选作品：按讨论热度与评分排列</h2>
+          <span class="section-note">共28部 · 展示前8部</span>
+        </div>
+        <div class="card-grid" id="workCardGrid">
+          <article class="work-card">
+            <img class="work-card-img" src="https://picsum.photos/seed/pnm-yeseoul/400/300" width="400" height="300" loading="lazy" alt="《夜色首尔》剧照：夜晚街头霓虹灯">
+            <div class="work-card-body">
+              <h3 class="work-card-title">夜色首尔</h3>
+              <div class="work-card-tags">
+                <span class="tag accent">都市夜班</span>
+                <span class="tag">2019</span>
+                <span class="tag">6集</span>
+              </div>
+              <p class="work-card-desc">首尔弘大街区夜班店员与常客的交叉叙事，第3集重剪版增加12分钟便利店对话戏，评分从8.4升至8.9。</p>
+              <div class="work-card-meta">
+                <span>★★★★☆ 8.9</span>
+                <span>播放 28.6万</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="work-card">
+            <img class="work-card-img" src="https://picsum.photos/seed/pnm-bianli/400/300" width="400" height="300" loading="lazy" alt="《便利店夜班》场景：凌晨便利店货架">
+            <div class="work-card-body">
+              <h3 class="work-card-title">便利店夜班</h3>
+              <div class="work-card-tags">
+                <span class="tag accent">职场日常</span>
+                <span class="tag">2022</span>
+                <span class="tag">8集</span>
+              </div>
+              <p class="work-card-desc">凌晨两点到六点的便利店交接班流程，2026年11月3日收录幕后花絮，含导演关于“关东煮镜头”的选角笔记。</p>
+              <div class="work-card-meta">
+                <span>★★★★☆ 8.7</span>
+                <span>播放 22.1万</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="work-card">
+            <img class="work-card-img" src="https://picsum.photos/seed/pnm-chuzuwu/400/300" width="400" height="300" loading="lazy" alt="《出租屋日记》场景：狭小出租屋书桌">
+            <div class="work-card-body">
+              <h3 class="work-card-title">出租屋日记</h3>
+              <div class="work-card-tags">
+                <span class="tag accent">情感短剧</span>
+                <span class="tag">2020</span>
+                <span class="tag">4集</span>
+              </div>
+              <p class="work-card-desc">四集分别对应春、夏、秋、冬的出租屋独居状态，第2集“梅雨季”被观众剪成3分钟无声版，B站播放47万。</p>
+              <div class="work-card-meta">
+                <span>★★★★☆ 9.1</span>
+                <span>播放 19.8万</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="work-card">
+            <img class="work-card-img" src="https://picsum.photos/seed/pnm-wuye/400/300" width="400" height="300" loading="lazy" alt="《午夜咖啡》场景：深夜咖啡馆吧台">
+            <div class="work-card-body">
+              <h3 class="work-card-title">午夜咖啡</h3>
+              <div class="work-card-tags">
+                <span class="tag accent">都市夜班</span>
+                <span class="tag">2021</span>
+                <span class="tag">5集</span>
+              </div>
+              <p class="work-card-desc">一间只在23点到凌晨4点营业的咖啡馆，每集一位熟客点单，饮品单在片尾作为彩蛋出现。</p>
+              <div class="work-card-meta">
+                <span>★★★★☆ 8.5</span>
+                <span>播放 16.3万</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="work-card">
+            <img class="work-card-img" src="https://picsum.photos/seed/pnm-tongqin/400/300" width="400" height="300" loading="lazy" alt="《通勤路上》场景：地铁车厢内低头看手机">
+            <div class="work-card-body">
+              <h3 class="work-card-title">通勤路上</h3>
+              <div class="work-card-tags">
+                <span class="tag">职场日常</span>
+                <span class="tag">2023</span>
+                <span class="tag">3集</span>
+              </div>
+              <p class="work-card-desc">单程47分钟地铁通勤的固定机位拍摄，第2集用同一节车厢早高峰与末班车画面对剪，时长对比精确到秒。</p>
+              <div class="work-card-meta">
+                <span>★★★★☆ 8.2</span>
+                <span>播放 12.7万</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="work-card">
+            <img class="work-card-img" src="https://picsum.photos/seed/pnm-yuting/400/300" width="400" height="300" loading="lazy" alt="《雨停之前》场景：雨夜公交站台">
+            <div class="work-card-body">
+              <h3 class="work-card-title">雨停之前</h3>
+              <div class="work-card-tags">
+                <span class="tag accent">情感短剧</span>
+                <span class="tag">2024</span>
+                <span class="tag">2集</span>
+              </div>
+              <p class="work-card-desc">公交站台等雨停的28分钟长镜头，分上下两集播出，第1集结尾雨声突然消失的3秒被弹幕称为“全片最安静的时刻”。</p>
+              <div class="work-card-meta">
+                <span>★★★★★ 9.0</span>
+                <span>播放 15.4万</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="work-card">
+            <img class="work-card-img" src="https://picsum.photos/seed/pnm-hanbao/400/300" width="400" height="300" loading="lazy" alt="《汉江巴士》场景：汉江边公交车驶过">
+            <div class="work-card-body">
+              <h3 class="work-card-title">汉江巴士</h3>
+              <div class="work-card-tags">
+                <span class="tag">都市夜班</span>
+                <span class="tag">2025</span>
+                <span class="tag">4集</span>
+              </div>
+              <p class="work-card-desc">夜间巴士司机与末班乘客的四个独立故事，第3集出现真实汉江大桥堵车画面，拍摄于2025年9月12日。</p>
+              <div class="work-card-meta">
+                <span>★★★★☆ 8.6</span>
+                <span>播放 9.8万</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="work-card">
+            <img class="work-card-img" src="https://picsum.photos/seed/pnm-bianli2/400/300" width="400" height="300" loading="lazy" alt="《便利店夜班》第二季场景：收银台前排队">
+            <div class="work-card-body">
+              <h3 class="work-card-title">便利店夜班 第二季</h3>
+              <div class="work-card-tags">
+                <span class="tag accent">职场日常</span>
+                <span class="tag">2026</span>
+                <span class="tag">6集</span>
+              </div>
+              <p class="work-card-desc">接第一季结尾，新店长调任后夜班排班表更新，第1集片尾字幕列出全部夜班员工真实工龄。</p>
+              <div class="work-card-meta">
+                <span>★★★★☆ 8.8</span>
+                <span>播放 7.2万</span>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="no-results" id="noResults">没有匹配的作品，试试其他关键词。</div>
+      </section>
+
+      <!-- 3. 最新更新 -->
+      <section id="updates" class="section-block">
+        <div class="section-head">
+          <h2>最新更新：11月8日前后条目变动</h2>
+          <span class="section-note">截至2026-11-08</span>
+        </div>
+        <div class="update-list">
+          <div class="update-item">
+            <span class="update-date">11-08</span>
+            <div class="update-body">
+              <div class="update-title">《夜色首尔》第3集重剪版上线</div>
+              <div class="update-desc">新增12分钟便利店对话戏，原版片长31分钟，重剪版43分钟，导演手记同步更新。</div>
+            </div>
+          </div>
+          <div class="update-item">
+            <span class="update-date">11-06</span>
+            <div class="update-body">
+              <div class="update-title">28部全目录索引页整理完毕</div>
+              <div class="update-desc">按年份、题材、时长三个维度交叉索引，每部标注上线平台与花絮收录状态。</div>
+            </div>
+          </div>
+          <div class="update-item">
+            <span class="update-date">11-05</span>
+            <div class="update-body">
+              <div class="update-title">《便利店夜班》第二季第4集评分升至8.8</div>
+              <div class="update-desc">第4集“关东煮镜头”讨论量单日增1300条，豆瓣短评区出现长评6篇。</div>
+            </div>
+          </div>
+          <div class="update-item">
+            <span class="update-date">11-03</span>
+            <div class="update-body">
+              <div class="update-title">《便利店夜班》幕后花絮收录</div>
+              <div class="update-desc">导演手记第4篇发布，解释关东煮镜头从12秒剪到7秒的原因。</div>
+            </div>
+          </div>
+          <div class="update-item">
+            <span class="update-date">11-01</span>
+            <div class="update-body">
+              <div class="update-title">《雨停之前》第2集弹幕总量破2万</div>
+              <div class="update-desc">“雨声消失”3秒片段被单独截出传播，B站播放量48小时内增4.2万。</div>
+            </div>
+          </div>
+          <div class="update-item">
+            <span class="update-date">10-28</span>
+            <div class="update-body">
+              <div class="update-title">《出租屋日记》第2集无声版重传</div>
+              <div class="update-desc">观众自制3分钟无声剪辑版，保留梅雨季雨声底噪，播放量47万。</div>
+            </div>
+          </div>
+          <div class="update-item">
+            <span class="update-date">10-25</span>
+            <div class="update-body">
+              <div class="update-title">《汉江巴士》第3集堵车画面来源确认</div>
+              <div class="update-desc">拍摄于2025年9月12日晚高峰，汉江大桥南向北方向，车内固定机位。</div>
+            </div>
+          </div>
+          <div class="update-item">
+            <span class="update-date">10-20</span>
+            <div class="update-body">
+              <div class="update-title">《午夜咖啡》第5集饮品单彩蛋整理</div>
+              <div class="update-desc">片尾出现7款饮品名称，其中3款在《夜色首尔》第1集出现过同名。</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. 分类入口 -->
+      <section id="categories" class="section-block">
+        <div class="section-head">
+          <h2>分类索引：按题材与场景检索</h2>
+        </div>
+        <div class="category-grid">
+          <a href="/#featured" class="category-item">都市夜班<span class="cat-count">11部</span></a>
+          <a href="/#featured" class="category-item">职场日常<span class="cat-count">7部</span></a>
+          <a href="/#featured" class="category-item">情感短剧<span class="cat-count">6部</span></a>
+          <a href="/#featured" class="category-item">便利店场景<span class="cat-count">7部</span></a>
+          <a href="/#featured" class="category-item">出租屋场景<span class="cat-count">9部</span></a>
+          <a href="/#featured" class="category-item">单集短片<span class="cat-count">12部</span></a>
+          <a href="/#featured" class="category-item">多集系列<span class="cat-count">16部</span></a>
+          <a href="/#featured" class="category-item">含幕后花絮<span class="cat-count">9部</span></a>
+        </div>
+      </section>
+
+      <!-- 5. 深度解析 -->
+      <section id="deep-dive" class="section-block">
+        <div class="deep-dive">
+          <h2>深度解析：28部作品的三条隐性线索</h2>
+
+          <h3>时间线：从2019到2026的题材迁移</h3>
+          <p>
+            2019至2021年的作品以<strong>夜晚空间</strong>为核心，六部中有五部发生在23点之后。《夜色首尔》第1集开场镜头是凌晨1点17分的便利店自动门，《午夜咖啡》第1集从凌晨2点03分开始。2022年《便利店夜班》第一季把时间锚点提前到22点交班，夜班场景从“深夜”变成“傍晚延续”。2024年《雨停之前》的28分钟长镜头发生在傍晚6点47分至7点15分，雨停时间精确到秒。2026年第二季第1集的排班表显示夜班起始时间为21点30分。
+          </p>
+          <p>
+            这条时间线能说明一件事：场景没有离开夜晚，但<strong>夜晚的起点在逐年提前</strong>。2019年的“深夜”是凌晨，2026年的“夜班”从晚饭后开始。观众在豆瓣短评里提到“越来越像下班后”，这条评论出现在《便利店夜班》第二季第1集条目下，获赞214次。
+          </p>
+
+          <h3>空间：便利店、出租屋、通勤工具的三点循环</h3>
+          <p>
+            28部资源中，便利店场景出现7部，出租屋场景9部，通勤工具（地铁、公交、夜间巴士）6部。这三类空间构成一个闭环：从出租屋出发，经过通勤工具，抵达便利店或咖啡馆，再返回出租屋。闭环里缺了“公司”场景，28部中只有《通勤路上》第3集出现了2分18秒的办公室镜头，其余作品刻意跳过工作场所。
+          </p>
+          <div class="callout">
+            可核对的判断：跳过公司场景不是遗漏。2026年11月3日导演手记第4篇写明“工作场所会改变人物关系节奏，夜班和出租屋才能保持单人视角”。这条手记被转载到微博后，评论区出现两种相反解读，一种认为“单人视角更真实”，另一种认为“回避了职场矛盾”。两种说法目前都没有进一步官方回应。
+          </div>
+
+          <h3>幕后花絮的可信度拆解</h3>
+          <p>
+            目前收录的9部花絮中，按来源可拆成三层。第一层是导演手记4篇（《夜色首尔》2篇、《便利店夜班》2篇），发布在制作方官方账号，有具体日期和修改记录。第二层是演员访谈4篇，来源为杂志《Moview》2026年10月号及B站官方账号转载视频，文字稿由观众转录，存在个别措辞差异。第三层是拍摄现场侧拍2组，来源为观众拍摄的路透照片，拍摄时间与地点可核对，但画面内容与成片对应关系未获官方确认。
+          </p>
+          <p>
+            可信度差异不在“谁说的”，而在<strong>哪一项来源缺失</strong>：导演手记有修改时间戳，演员访谈有杂志刊号，侧拍照片只有EXIF信息，没有对应的场记单。后者可以用来判断拍摄地点，不能用来判断镜头在成片中的位置。
+          </p>
+
+          <h3>评分分布：9分以上作品为什么只有两部</h3>
+          <p>
+            28部作品中评分在9.0以上的只有《出租屋日记》9.1和《雨停之前》9.0。两部共同点：集数少（4集和2集），单集时长短（12分钟和28分钟），场景单一。评分在8.0至8.9之间共17部，7.2至7.9之间共9部。低分区间集中在2023年的《通勤路上》第3集（7.2）和2025年的《汉江巴士》第4集（7.4），两部都是系列延长后新增的集数。
+          </p>
+          <p>
+            这个分布支持一个判断：<strong>观众对短篇、单一场景的作品评分更宽</strong>。系列延长后，同一场景重复使用，评分往下走。这个判断可以反驳——有观众在《汉江巴士》第4集短评里写“第4集才是全剧最好”，获赞89次。两种说法并存，目前没有足够数据判定哪边占多数。
+          </p>
+        </div>
+      </section>
+
+      <!-- 6. 体验指南 -->
+      <section id="guide" class="section-block">
+        <div class="section-head">
+          <h2>体验指南：补全28部的观看顺序</h2>
+        </div>
+        <div class="guide-steps">
+          <div class="guide-step">
+            <div class="guide-step-num">1</div>
+            <h4>先看单集短片</h4>
+            <p>12部单集短片时长在8到15分钟，适合先建立对场景和镜头的熟悉度。《雨停之前》上下两集加起来56分钟，可以一次看完。</p>
+          </div>
+          <div class="guide-step">
+            <div class="guide-step-num">2</div>
+            <h4>按空间主题分组</h4>
+            <p>便利店7部连着看，出租屋9部连着看，通勤6部连着看。分组后能看出同一空间在不同年份的取景变化，比按年份顺序看更直观。</p>
+          </div>
+          <div class="guide-step">
+            <div class="guide-step-num">3</div>
+            <h4>对比第1集与重剪版</h4>
+            <p>《夜色首尔》第3集原版31分钟，重剪版43分钟。两个版本都看一遍，能看出12分钟新增对话对人物关系的改动。原版在2021年上线，重剪版2026年11月8日上线。</p>
+          </div>
+          <div class="guide-step">
+            <div class="guide-step-num">4</div>
+            <h4>花絮放在最后看</h4>
+            <p>9部花絮中有4篇导演手记直接讨论镜头取舍，先看正片再看手记，能对照出具体是哪几秒被剪掉。先看手记会提前知道结果，减少对照的乐趣。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. FAQ -->
+      <section id="faq" class="section-block">
+        <div class="section-head">
+          <h2>常见问答</h2>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>《夜色首尔》第3集重剪版和原版差在哪里？</summary>
+            <div class="faq-answer">重剪版多了12分钟便利店对话戏，集中在原版第18分钟到第22分钟之间。原版这4分钟是空镜，重剪版替换为夜班店员与常客的两段对话。导演手记注明新对话拍摄于2026年9月，演员档期协调了三天。</div>
+          </details>
+          <details class="faq-item">
+            <summary>28部资源里哪几部有官方幕后花絮？</summary>
+            <div class="faq-answer">9部有花絮，其中导演手记4篇来自《夜色首尔》2篇和《便利店夜班》2篇，发布时间分别在2026年10月22日、11月3日。演员访谈4篇来自《Moview》2026年10月号和B站官方账号。侧拍2组没有官方确认。</div>
+          </details>
+          <details class="faq-item">
+            <summary>《出租屋日记》为什么评分最高？</summary>
+            <div class="faq-answer">四集各12分钟，场景固定在出租屋内部，单集内不切空间。豆瓣短评区提到“四季对应四个情绪状态”的评论获赞最多。9.1分在28部里排第一，比第二的《雨停之前》高0.1。</div>
+          </details>
+          <details class="faq-item">
+            <summary>《便利店夜班》第二季第4集“关东煮镜头”是什么？</summary>
+            <div class="faq-answer">第4集第7分钟到第8分钟之间，镜头对准关东煮锅7秒，没有台词。导演手记第4篇解释原剪12秒，后来剪到7秒，理由是“多出的5秒让观众注意汤的沸腾而不是人物”。</div>
+          </details>
+          <details class="faq-item">
+            <summary>《雨停之前》第1集结尾雨声消失的3秒是后期做的吗？</summary>
+            <div class="faq-answer">不是后期。拍摄时雨在傍晚7点15分实际停了，现场录音保留了3秒环境声骤降。第2集开头有同一时间点的另一机位画面，可以对照确认。这个细节在B站弹幕里被反复提到。</div>
+          </details>
+          <details class="faq-item">
+            <summary>《汉江巴士》第3集堵车画面是摆拍吗？</summary>
+            <div class="faq-answer">不是摆拍。拍摄于2025年9月12日晚6点40分，汉江大桥南向北方向，车内固定机位。画面里出现三辆同线路公交车，车牌模糊但线路号可见。导演在2026年10月25日的更新说明里确认了拍摄时间和地点。</div>
+          </details>
+        </div>
+      </section>
+
+      <!-- 8. 用户评论 -->
+      <section id="comments" class="section-block">
+        <div class="section-head">
+          <h2>观众评论</h2>
+          <span class="section-note">14条 · 近30天内</span>
+        </div>
+        <div class="comment-list">
+          <div class="comment-item">
+            <div class="comment-avatar">夜</div>
+            <div class="comment-body">
+              <div class="comment-meta"><span class="comment-nick">夜班小陈</span><span class="comment-time">11-08</span></div>
+              <p class="comment-text">重剪版那12分钟对话加得有点多，原版空镜其实挺好的。不过新加的两段里有一句“关东煮汤别倒”跟第二季第4集对上了，算是个彩蛋。</p>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-avatar">雨</div>
+            <div class="comment-body">
+              <div class="comment-meta"><span class="comment-nick">雨停之前刷了五遍</span><span class="comment-time">11-07</span></div>
+              <p class="comment-text">《雨停之前》第1集那3秒雨声消失，我在耳机里听了五次，确实不是后期。第2集开头同一时间点有车灯闪过，能对上。</p>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-avatar">便</div>
+            <div class="comment-body">
+              <div class="comment-meta"><span class="comment-nick">便利店常客</span><span class="comment-time">11-06</span></div>
+              <p class="comment-text">第二季第4集关东煮镜头7秒比12秒好，12秒盯着汤看会出戏。导演手记里写“多出的5秒让观众注意汤的沸腾”，我同意。</p>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-avatar">汉</div>
+            <div class="comment-body">
+              <div class="comment-meta"><span class="comment-nick">汉江堵车亲历者</span><span class="comment-time">11-05</span></div>
+              <p class="comment-text">《汉江巴士》第3集那个堵车，我那天也在桥上。线路号看不清但车头灯排列对得上，确实是晚高峰。</p>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-avatar">出</div>
+            <div class="comment-body">
+              <div class="comment-meta"><span class="comment-nick">出租屋四季</span><span class="comment-time">11-04</span></div>
+              <p class="comment-text">《出租屋日记》第2集梅雨季，我每年六月都会翻出来看一遍。无声版剪掉台词之后雨声更明显，反而比原版好。</p>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-avatar">通</div>
+            <div class="comment-body">
+              <div class="comment-meta"><span class="comment-nick">通勤47分钟</span><span class="comment-time">11-03</span></div>
+              <p class="comment-text">《通勤路上》第3集办公室那2分18秒是全系列唯一一次进公司，拍得挺别扭的，镜头明显不知道怎么摆。可能导演也知道，后面就没再拍过。</p>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-avatar">咖</div>
+            <div class="comment-body">
+              <div class="comment-meta"><span class="comment-nick">午夜咖啡不加糖</span><span class="comment-time">11-02</span></div>
+              <p class="comment-text">《午夜咖啡》第5集片尾那7款饮品，有三款跟《夜色首尔》第1集重名。我截图对比过，杯型不一样，应该是故意的。</p>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-avatar">路</div>
+            <div class="comment-body">
+              <div class="comment-meta"><span class="comment-nick">路人甲看剧</span><span class="comment-time">10-31</span></div>
+              <p class="comment-text">说实话28部看下来有点审美疲劳，便利店和出租屋来回切，布景太像了。第二季换了店长才好一点。</p>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-avatar">评</div>
+            <div class="comment-body">
+              <div class="comment-meta"><span class="comment-nick">评分观察员</span><span class="comment-time">10-29</span></div>
+              <p class="comment-text">9分以上只有两部不是没道理。集数一多，后面几集明显水，7.2的《通勤路上》第3集就是例子。</p>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-avatar">手</div>
+            <div class="comment-body">
+              <div class="comment-meta"><span class="comment-nick">手记收藏夹</span><span class="comment-time">10-27</span></div>
+              <p class="comment-text">导演手记第2篇提到《夜色首尔》第1集便利店自动门那个镜头拍了11条，因为门开合速度不对。这种细节正片里根本看不出来。</p>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-avatar">花</div>
+            <div class="comment-body">
+              <div class="comment-meta"><span class="comment-nick">花絮党</span><span class="comment-time">10-25</span></div>
+              <p class="comment-text">侧拍那两组照片只有EXIF没有场记单，能看出是在哪个便利店门口拍的，但对应哪一集真看不出来。希望官方补个说明。</p>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-avatar">评</div>
+            <div class="comment-body">
+              <div class="comment-meta"><span class="comment-nick">评分不重要</span><span class="comment-time">10-23</span></div>
+              <p class="comment-text">《汉江巴士》第4集才7.4？这集结尾司机下车抽烟那个长镜头比前三集都好。评分这种事情看看就行。</p>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-avatar">补</div>
+            <div class="comment-body">
+              <div class="comment-meta"><span class="comment-nick">补完计划进行中</span><span class="comment-time">10-21</span></div>
+              <p class="comment-text">按空间分组看确实比按年份看有意思。便利店7部连着看，能看出货架从2019年的老式摆法到2026年换了三次。</p>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-avatar">路</div>
+            <div class="comment-body">
+              <div class="comment-meta"><span class="comment-nick">路过留个爪</span><span class="comment-time">10-19</span></div>
+              <p class="comment-text">昨天才刷到《雨停之前》第1集，站台等雨的28分钟长镜头太适合下雨天看了。今天正好下雨，再看一遍。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 9. 相关资讯 -->
+      <section id="news" class="section-block">
+        <div class="section-head">
+          <h2>相关资讯</h2>
+        </div>
+        <div class="news-list">
+          <article class="news-item">
+            <div class="news-header">
+              <span class="news-title">《夜色首尔》第3集重剪版上线首日播放28.6万</span>
+              <span class="news-date">2026-11-08</span>
+            </div>
+            <p class="news-summary">重剪版新增12分钟便利店对话戏，原版同时保留。上线12小时内弹幕量达4700条，其中提到“关东煮”的弹幕占比11%。</p>
+          </article>
+          <article class="news-item">
+            <div class="news-header">
+              <span class="news-title">《便利店夜班》第二季第4集豆瓣评分升至8.8</span>
+              <span class="news-date">2026-11-05</span>
+            </div>
+            <p class="news-summary">第4集“关东煮镜头”讨论量单日增1300条，长评新增6篇。导演手记第4篇同日发布，解释镜头从12秒剪到7秒的取舍。</p>
+          </article>
+          <article class="news-item">
+            <div class="news-header">
+              <span class="news-title">《雨停之前》第2集弹幕总量突破2万条</span>
+              <span class="news-date">2026-11-01</span>
+            </div>
+            <p class="news-summary">“雨声消失”3秒片段被单独截出传播，B站播放量48小时内增4.2万。第2集开头同一时间点另一机位画面被观众做成对比图。</p>
+          </article>
+          <article class="news-item">
+            <div class="news-header">
+              <span class="news-title">《出租屋日记》第2集无声版重传播放47万</span>
+              <span class="news-date">2026-10-28</span>
+            </div>
+            <p class="news-summary">观众自制3分钟无声剪辑版，保留梅雨季雨声底噪，删去全部台词。原作者在评论区回复“比原版好”获赞302次。</p>
+          </article>
+          <article class="news-item">
+            <div class="news-header">
+              <span class="news-title">《汉江巴士》第3集堵车画面拍摄时间确认</span>
+              <span class="news-date">2026-10-25</span>
+            </div>
+            <p class="news-summary">拍摄于2025年9月12日晚6点40分，汉江大桥南向北方向。导演在更新说明中列出具体时间、机位和线路号，回应摆拍质疑。</p>
+          </article>
+          <article class="news-item">
+            <div class="news-header">
+              <span class="news-title">《午夜咖啡》第5集饮品单与《夜色首尔》第1集重名</span>
+              <span class="news-date">2026-10-20</span>
+            </div>
+            <p class="news-summary">7款饮品中有3款同名，杯型不同。观众截图对比后发现在同一条街的同一家店取景，剧组未回应是否为联动设计。</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- 10. 相关推荐 -->
+      <section id="recommend" class="section-block">
+        <div class="section-head">
+          <h2>相关推荐</h2>
+        </div>
+        <div class="rec-tags">
+          <a href="/#featured" class="rec-tag">《夜色首尔》重剪版对比 <span class="rec-count">3篇</span></a>
+          <a href="/#featured" class="rec-tag">《便利店夜班》关东煮镜头解析 <span class="rec-count">2篇</span></a>
+          <a href="/#featured" class="rec-tag">《出租屋日记》四季情绪对照 <span class="rec-count">4篇</span></a>
+          <a href="/#featured" class="rec-tag">《雨停之前》长镜头机位图 <span class="rec-count">1篇</span></a>
+          <a href="/#featured" class="rec-tag">《通勤路上》早晚高峰对剪 <span class="rec-count">2篇</span></a>
+          <a href="/#featured" class="rec-tag">《汉江巴士》线路号考证 <span class="rec-count">1篇</span></a>
+          <a href="/#featured" class="rec-tag">导演手记第1—4篇合集 <span class="rec-count">4篇</span></a>
+          <a href="/#featured" class="rec-tag">演员访谈《Moview》2026年10月号 <span class="rec-count">1篇</span></a>
+        </div>
+      </section>
+
+      <!-- 11. 补充板块：可信度分层 -->
+      <section id="credibility" class="section-block">
+        <div class="section-head">
+          <h2>花絮来源可信度分层</h2>
+        </div>
+        <div class="credibility-panel">
+          <div class="cred-card">
+            <h4>导演手记 <span class="cred-badge high">高</span></h4>
+            <p>4篇，发布在制作方官方账号，带修改时间戳。例如第4篇注明2026年11月3日修订，解释关东煮镜头从12秒剪到7秒。</p>
+          </div>
+          <div class="cred-card">
+            <h4>演员访谈 <span class="cred-badge mid">中</span></h4>
+            <p>4篇，来源为杂志《Moview》2026年10月号及B站官方转载视频。文字稿由观众转录，个别措辞与视频原声存在差异。</p>
+          </div>
+          <div class="cred-card">
+            <h4>现场侧拍 <span class="cred-badge low">待核</span></h4>
+            <p>2组，观众拍摄的路透照片，有EXIF时间和地点，能确认拍摄位置。缺少场记单，无法确定对应成片哪一集哪个镜头。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 互动栏目 -->
+      <section id="interact" class="section-block">
+        <div class="interact-banner">
+          <div>
+            <h3>投稿与交流</h3>
+            <p>发现新的花絮来源、拍摄地点或镜头对照，可以提交投稿。每周三整理一次，经核对的条目会标注在更新列表。</p>
+          </div>
+          <a href="/#updates" class="btn-primary">查看更新列表</a>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- 右辅助栏 -->
+    <aside class="sidebar-right" aria-label="辅助信息">
+      <div class="sidebar-card">
+        <h3>热门条目</h3>
+        <div class="hot-list">
+          <a href="/#featured" class="hot-item"><span class="hot-rank">1</span>夜色首尔 第3集重剪版</a>
+          <a href="/#featured" class="hot-item"><span class="hot-rank">2</span>便利店夜班 第二季 第4集</a>
+          <a href="/#featured" class="hot-item"><span class="hot-rank">3</span>雨停之前 第1集</a>
+          <a href="/#featured" class="hot-item"><span class="hot-rank">4</span>出租屋日记 第2集 梅雨季</a>
+          <a href="/#featured" class="hot-item"><span class="hot-rank">5</span>午夜咖啡 第5集</a>
+          <a href="/#featured" class="hot-item"><span class="hot-rank">6</span>汉江巴士 第3集</a>
+        </div>
+      </div>
+      <div class="sidebar-card">
+        <h3>更新节奏</h3>
+        <p style="font-size:12.5px;color:var(--text-secondary);line-height:1.7;margin-bottom:6px;">11月1日—11月8日共更新4条条目，其中重剪版1条、花絮1条、评分变动1条、观众自制内容1条。</p>
+        <p style="font-size:12px;color:var(--text-tertiary);">10月20日—10月31日共更新6条。</p>
+      </div>
+      <div class="sidebar-card">
+        <h3>快速入口</h3>
+        <div style="display:flex;flex-direction:column;gap:4px;">
+          <a href="/#featured" style="font-size:13px;color:var(--text-secondary);padding:4px 0;">→ 全部28部作品</a>
+          <a href="/#deep-dive" style="font-size:13px;color:var(--text-secondary);padding:4px 0;">→ 导演手记合集</a>
+          <a href="/#faq" style="font-size:13px;color:var(--text-secondary);padding:4px 0;">→ 重剪版差异说明</a>
+          <a href="/#credibility" style="font-size:13px;color:var(--text-secondary);padding:4px 0;">→ 花絮可信度分层</a>
+        </div>
+      </div>
+    </aside>
+
+  </div>
+
+  <!-- 页尾 -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand"><span class="footer-mark">朴</span>朴妮唛28部资源</div>
+          <p class="footer-desc">覆盖2019—2026年共28部作品，含12部单集短片与16部多集系列，收录导演手记4篇、演员访谈4篇、侧拍2组。更新节奏为每周1—2条，每月底整理一次花絮来源核对表。</p>
+        </div>
+        <div class="footer-col">
+          <h4>作品索引</h4>
+          <a href="/#featured">夜色首尔</a>
+          <a href="/#featured">便利店夜班</a>
+          <a href="/#featured">出租屋日记</a>
+          <a href="/#featured">雨停之前</a>
+          <a href="/#featured">汉江巴士</a>
+        </div>
+        <div class="footer-col">
+          <h4>内容栏目</h4>
+          <a href="/#deep-dive">深度解析</a>
+          <a href="/#guide">观看指南</a>
+          <a href="/#faq">常见问答</a>
+          <a href="/#credibility">可信度分层</a>
+          <a href="/#interact">投稿交流</a>
+        </div>
+        <div class="footer-col">
+          <h4>更新与说明</h4>
+          <a href="/#updates">最新更新</a>
+          <a href="/#news">相关资讯</a>
+          <a href="/#comments">观众评论</a>
+          <a href="/#recommend">相关推荐</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 朴妮唛28部资源 · 内容索引与整理</span>
+        <span>最后更新：2026-11-08 · 对应《夜色首尔》第3集重剪版上线</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-top" id="backTop" aria-label="回到顶部">↑</button>
+
+  <!-- 结构化数据 -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "朴妮唛28部资源",
+    "description": "朴妮唛28部资源收录28部代表性作品，含分类索引、最新动态、深度解析与观众评论，适合想系统了解或补全观看顺序的观众。",
+    "inLanguage": "zh-CN",
+    "url": ""
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "《夜色首尔》第3集重剪版和原版差在哪里？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "重剪版多了12分钟便利店对话戏，集中在原版第18分钟到第22分钟之间。原版这4分钟是空镜，重剪版替换为夜班店员与常客的两段对话。导演手记注明新对话拍摄于2026年9月，演员档期协调了三天。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "28部资源里哪几部有官方幕后花絮？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "9部有花絮，其中导演手记4篇来自《夜色首尔》2篇和《便利店夜班》2篇，发布时间分别在2026年10月22日、11月3日。演员访谈4篇来自《Moview》2026年10月号和B站官方账号。侧拍2组没有官方确认。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "《出租屋日记》为什么评分最高？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "四集各12分钟，场景固定在出租屋内部，单集内不切空间。豆瓣短评区提到“四季对应四个情绪状态”的评论获赞最多。9.1分在28部里排第一，比第二的《雨停之前》高0.1。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "《便利店夜班》第二季第4集“关东煮镜头”是什么？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "第4集第7分钟到第8分钟之间，镜头对准关东煮锅7秒，没有台词。导演手记第4篇解释原剪12秒，后来剪到7秒，理由是“多出的5秒让观众注意汤的沸腾而不是人物”。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "《雨停之前》第1集结尾雨声消失的3秒是后期做的吗？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "不是后期。拍摄时雨在傍晚7点15分实际停了，现场录音保留了3秒环境声骤降。第2集开头有同一时间点的另一机位画面，可以对照确认。这个细节在B站弹幕里被反复提到。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "《汉江巴士》第3集堵车画面是摆拍吗？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "不是摆拍。拍摄于2025年9月12日晚6点40分，汉江大桥南向北方向，车内固定机位。画面里出现三辆同线路公交车，车牌模糊但线路号可见。导演在2026年10月25日的更新说明里确认了拍摄时间和地点。"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <script>
+    (function() {
+      'use strict';
+
+      // 搜索筛选
+      var searchInput = document.getElementById('searchInput');
+      var searchBtn = document.getElementById('searchBtn');
+      var workCards = document.querySelectorAll('#workCardGrid .work-card');
+      var noResults = document.getElementById('noResults');
+
+      function filterCards() {
+        var q = (searchInput.value || '').trim().toLowerCase();
+        var visible = 0;
+        workCards.forEach(function(card) {
+          var text = card.textContent.toLowerCase();
+          var match = q === '' || text.indexOf(q) !== -1;
+          card.style.display = match ? '' : 'none';
+          if (match) visible++;
+        });
+        noResults.style.display = visible === 0 ? 'block' : 'none';
+      }
+
+      if (searchInput) {
+        searchInput.addEventListener('input', filterCards);
+        searchInput.addEventListener('keydown', function(e) {
+          if (e.key === 'Enter') { e.preventDefault(); filterCards(); }
+        });
+      }
+      if (searchBtn) {
+        searchBtn.addEventListener('click', filterCards);
+      }
+
+      // 回到顶部
+      var backTop = document.getElementById('backTop');
+      var ticking = false;
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(function() {
+            if (window.scrollY > window.innerHeight) {
+              backTop.classList.add('visible');
+            } else {
+              backTop.classList.remove('visible');
+            }
+            ticking = false;
+          });
+          ticking = true;
+        }
+      }, { passive: true });
+
+      backTop.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      // 移动端菜单
+      var hamburger = document.getElementById('hamburgerBtn');
+      var overlay = document.getElementById('menuOverlay');
+      var headerNav = document.querySelector('.header-nav');
+
+      function closeMenu() {
+        if (overlay) overlay.classList.remove('active');
+        if (hamburger) {
+          hamburger.setAttribute('aria-expanded', 'false');
+          hamburger.textContent = '☰';
+        }
+        if (headerNav) {
+          headerNav.style.display = '';
+        }
+      }
+
+      function openMenu() {
+        if (overlay) overlay.classList.add('active');
+        if (hamburger) {
+          hamburger.setAttribute('aria-expanded', 'true');
+          hamburger.textContent = '✕';
+        }
+        if (headerNav) {
+          headerNav.style.display = 'flex';
+          headerNav.style.position = 'fixed';
+          headerNav.style.top = 'calc(var(--announce-height) + var(--header-height))';
+          headerNav.style.left = '0';
+          headerNav.style.right = '0';
+          headerNav.style.background = '#fff';
+          headerNav.style.padding = '12px 16px';
+          headerNav.style.flexDirection = 'column';
+          headerNav.style.gap = '2px';
+          headerNav.style.zIndex = '96';
+          headerNav.style.maxHeight = 'calc(100vh - 120px)';
+          headerNav.style.overflowY = 'auto';
+          headerNav.style.borderBottom = '1px solid var(--border)';
+          headerNav.style.boxShadow = '0 8px 24px rgba(0,0,0,0.08)';
+        }
+      }
+
+      if (hamburger) {
+        hamburger.addEventListener('click', function() {
+          var expanded = hamburger.getAttribute('aria-expanded') === 'true';
+          if (expanded) {
+            closeMenu();
+          } else {
+            openMenu();
+          }
+        });
+      }
+
+      if (overlay) {
+        overlay.addEventListener('click', closeMenu);
+      }
+
+      // 点击导航后自动收起
+      if (headerNav) {
+        headerNav.addEventListener('click', function(e) {
+          if (e.target.tagName === 'A') {
+            closeMenu();
+          }
+        });
+      }
+
+      // Esc 关闭
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+          closeMenu();
+        }
+      });
+
+      // 频道高亮（简单实现）
+      var channelLinks = document.querySelectorAll('.channel-list a');
+      var sections = document.querySelectorAll('.section-block[id]');
+      if (channelLinks.length && sections.length) {
+        var observer = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              var id = entry.target.id;
+              channelLinks.forEach(function(link) {
+                link.classList.toggle('active', link.getAttribute('href') === '/#' + id);
+              });
+            }
+          });
+        }, { rootMargin: '-100px 0px -60% 0px' });
+        sections.forEach(function(s) { observer.observe(s); });
+      }
+
+    })();
+  </script>
+</body>
+  </html>
